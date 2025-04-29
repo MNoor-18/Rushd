@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/*################ PADDING ################*/
+.padding-y {
+    @apply py-10 xl:py-30
+}
+.padding-x {
+    @apply px-5 sm:px-9 md:px-13 xl:px-21 2xl:px-31
+}
+
+/*################ COLORS ################*/
+.bg-primary {
+    @apply bg-[#1C1C1C];
+}
+
+.bg-secondary {
+    @apply bg-[#FF5A1F];
+}
+
+.bg-tertiary {
+    @apply bg-[#FBF4E2];
+}
+
+/*###########*/
+
+.text-primary {
+    @apply text-[#1C1C1C];
+}
+
+.text-secondary {
+    @apply text-[#FF5A1F];
+}
+
+.text-tertiary {
+    @apply text-[#F9F5EC];
+}
