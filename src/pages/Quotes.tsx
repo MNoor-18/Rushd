@@ -31,13 +31,13 @@ const Quotes = () => {
 
     const handlePrev = () => {
         if (feedbacksScroller.current) {
-            feedbacksScroller.current.scrollLeft -= 300;
+            feedbacksScroller.current.scrollLeft -= 323;
         }
     };
 
     const handleNext = () => {
         if (feedbacksScroller.current) {
-            feedbacksScroller.current.scrollLeft += 300;
+            feedbacksScroller.current.scrollLeft += 323;
         }
     };
 

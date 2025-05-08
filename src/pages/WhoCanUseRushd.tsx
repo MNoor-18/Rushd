@@ -48,15 +48,15 @@ const WhoCanUseRushd = () => {
       </div>
 
       {/* Content Section */}
-      <div className="w-full h-fit my-4 padding-x flex  ">
+      <div className="w-full h-fit my-4 flex">
         {rushdData.categories.map(
           (item) => activeTab === item.title && (
               <div
                 key={item.name}
-                className="w-full flex items-center justify-between bg-white padding-x "
+                className="w-full flex flex-col lg:flex-row items-center pt-2 md:pt-8 lg:items-start justify-between bg-white padding-x "
               >
                 {/* Text Section */}
-                <div className="h-full w-full xl:pt-10 md:w-1/2 xl:w-lg ">
+                <div className="h-full w-full lg:w-1/2 xl:w-lg ">
                   <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
                     {item.name}
                   </h2>
@@ -66,7 +66,7 @@ const WhoCanUseRushd = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className="w-1/2 h-full pt-5 xl:w-xl">
+                <div className="w-xs h-fit sm:w-sm order-first pt-5 xl:w-lg">
                   <img
                     src={item.image}
                     className="w-full h-auto object-cover rounded-lg"

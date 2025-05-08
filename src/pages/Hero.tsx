@@ -17,7 +17,7 @@ const Hero = () => {
       {/* BACKGROUND OF HERO SECTION */}
       <div className="w-full h-full absolute left-0 top-0 -z-10 bg-[url('./public/assets/hero-bg.jpg')] bg-cover " />
 
-      <div data-aos="fade-up" className="w-full h-full padding-x flex flex-col gap-5 items-center justify-center lg:flex-row xl:items-start md:pt-[20%] lg:pt-[10%] lg:justify-between">
+      <div data-aos="fade-up" className="w-full h-full padding-x flex flex-col gap-5 items-center justify-center lg:flex-row lg:items-center lg:justify-between">
         <div className=" max-w-full order-last lg:order-first flex flex-col items-center lg:items-start gap-8 text-white">
           <h1 className="text-4xl text-center lg:leading-20 lg:text-start font-semibold md:text-5xl md:max-w-[650px] xl:text-[64px] ">
             {currentLanguage.heroData.title}

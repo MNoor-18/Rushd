@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 /*################ PADDING ################*/
-.padding-y {
-    @apply py-10 xl:py-30
-}
 .padding-x {
     @apply px-5 sm:px-9 md:px-13 xl:px-21 2xl:px-31
 }

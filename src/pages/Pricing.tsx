@@ -86,11 +86,11 @@ const Pricing = () => {
                 />
               ))}
 
-                <a href="#contact">
+                <a href="#contact" className="w-full">
                   <CustomButton
                     label={currentLanguage.pricingData.theButton.label}
                     event={() => {}}
-                    theStyle="w-full sel sm:w-xs py-4 xl:w-40 text-white md:py-2 bg-secondary"
+                    theStyle="w-full md:w-xs py-4 xl:w-40 text-white md:py-2 bg-secondary"
                   />
                 </a>
             </div>

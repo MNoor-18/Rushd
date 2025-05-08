@@ -31,13 +31,13 @@ const Partners = () => {
 
     const handlePrev = () => {
         if (partnersScroller.current) {
-            partnersScroller.current.scrollLeft -= 400;
+            partnersScroller.current.scrollLeft -= 300;
         }
     };
 
     const handleNext = () => {
         if (partnersScroller.current) {
-            partnersScroller.current.scrollLeft += 400;
+            partnersScroller.current.scrollLeft += 300;
         }
     };
 
