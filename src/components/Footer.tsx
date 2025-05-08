@@ -1,6 +1,7 @@
 import useLanguage from "../utils/utils";
 import { BiSend } from "react-icons/bi";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const Footer = () => {
   const currentLanguage = useLanguage();
@@ -18,38 +19,38 @@ const Footer = () => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwGGv9cCYFj_HZuiIBWKHOZHT9BwltfnR25ZQrjeW2Oxf4csufpWhhkUItCjqfszs9czQ/exec",
+        "https://script.google.com/macros/s/AKfycbwbHv5JEmLuBz4juABEC4pOWuwvEHv4_7G5VkCSt6Ay-jgYKggp4iCZnCnhvKVXsVwIZw/exec",
         {
           method: "POST",
           body: JSON.stringify({ email }),
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
           },
+          mode: "cors",
+          redirect: "follow",
         }
       );
 
-      const result = await response.json();
-
-      if (result.result === "success") {
-        setMessage(
+      if (response.ok) {
+        toast.success(
           selectedLang === "ar"
-            ? "✅ تم الاشتراك بنجاح!"
-            : "✅ Subscription successful!"
+            ? " تم الاشتراك بنجاح!"
+            : " Subscription successful!"
         );
         setEmail("");
       } else {
-        setMessage(
+        toast.error(
           selectedLang === "ar"
-            ? "❌ فشل الاشتراك. حاول مرة أخرى."
-            : "❌ Subscription failed. Please try again."
+            ? " فشل الاشتراك. حاول مرة أخرى."
+            : " Subscription failed. Please try again."
         );
       }
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
-      setMessage(
+      toast.error(
         selectedLang === "ar"
-          ? "❌ فشل الاشتراك. حاول مرة أخرى."
-          : "❌ Subscription failed. Please try again."
+          ? " فشل الاشتراك. حاول مرة أخرى."
+          : " Something went wrong"
       );
     }
     setIsLoading(false);
