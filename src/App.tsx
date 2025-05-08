@@ -1,10 +1,19 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Toaster } from "react-hot-toast";
 
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from "react-helmet-async";
 import { Footer, Navbar, Loading } from "./components";
-import { Hero, Pricing, Quotes, Features, WhoCanUseRushd, Contact, FAQ } from "./pages";
+import {
+  Hero,
+  Pricing,
+  Quotes,
+  Features,
+  WhoCanUseRushd,
+  Contact,
+  FAQ,
+} from "./pages";
 // import { Partners } from "./pages/Partners";
 
 function App() {
@@ -27,8 +36,12 @@ function App() {
   return (
     <HelmetProvider>
       <div className="max-w-[1920px] relative overflow-x-hidden scroll-smooth transition-all *:w-full 2xl:*:mx-auto ">
+        <Toaster />
         <div className="w-full h-24 fixed z-30 md:px-12 xl:px-20 2xl:px-30 ">
-          <div id="navbar_top_space" className="hidden md:block w-full h-5 backdrop-blur-[1px] transition-all"/>
+          <div
+            id="navbar_top_space"
+            className="hidden md:block w-full h-5 backdrop-blur-[1px] transition-all"
+          />
           <Navbar />
         </div>
 
@@ -52,9 +65,7 @@ function App() {
           <Quotes />
         </section>
 
-        <section>
-          {/* <Partners /> */}
-        </section>
+        <section>{/* <Partners /> */}</section>
 
         <section>
           <FAQ />
