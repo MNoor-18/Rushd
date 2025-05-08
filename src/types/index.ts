@@ -49,6 +49,13 @@ export interface SliderButtonsProps {
     atEnd?: boolean;
 }
 
+export interface FormData {
+  name: string;
+  surname: string;
+  email: string;
+  message: string;
+};
+
 // ########################### rushd data interface ###############################
 
 interface RushdContentLanguage {
@@ -170,3 +177,6 @@ export interface IRushdContent {
     en: RushdContentLanguage;
     ar: RushdContentLanguage;
   };
+
+
+

@@ -10,7 +10,7 @@ const WhoCanUseRushd = () => {
   const [activeTab, setActiveTab] = useState("Hotels");
 
   return (
-    <div className="pt-16 ">
+    <div data-aos="fade-up" className="h-fit py-16 ">
 
       <Helmet>
         <title>Rush</title>
@@ -48,7 +48,7 @@ const WhoCanUseRushd = () => {
       </div>
 
       {/* Content Section */}
-      <div className="w-full h-fit my-4 padding-x md:h-120 flex  ">
+      <div className="w-full h-fit my-4 padding-x flex  ">
         {rushdData.categories.map(
           (item) => activeTab === item.title && (
               <div

@@ -3,17 +3,19 @@ import { RushdContent } from "../translation/translation";
 
 const useLanguage = () => {
   const [currentLanguage, setCurrentLanguage] = useState(
-    window.navigator.language === "ar" ? RushdContent.en : RushdContent.ar
+    window.navigator.language === "ar" ? RushdContent.ar : RushdContent.en
   );
 
   useEffect(() => {
+
+    {/* The Setting In navbar Component */}
     const savedLanguage = localStorage.getItem("currentLanguage");
-    const elements = document.querySelectorAll('.const_direction');
+    const constDirection = document.querySelectorAll('.const_direction');
 
     if (savedLanguage === 'ar') {
       setCurrentLanguage(RushdContent.ar);
       document.documentElement.setAttribute("dir", "rtl");
-      elements.forEach((element) => {
+      constDirection.forEach((element) => {
         element.setAttribute('dir', 'ltr');
       });
       document.documentElement.setAttribute("lang", "ar");

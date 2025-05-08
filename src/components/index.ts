@@ -1,3 +1,4 @@
+import Loading from "./Loading";
 import Navbar from "./Navbar";
 import CustomButton from "./CustomButton";
 import Title from "./Title";
@@ -11,6 +12,7 @@ import SliderButtons from "./SliderButtons";
 import Footer from "./Footer";
 
 export {
+    Loading,
     Navbar,
     CustomButton,
     Title,

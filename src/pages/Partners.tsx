@@ -42,7 +42,7 @@ const Partners = () => {
     };
 
     return (
-        <div className="w-full h-fit">
+        <div data-aos="fade-up" className="w-full h-fit">
             {/* Title Section */}
             <div className="padding-x my-10">
                 <Title theTitle={currentLanguage.partnersData.sectionTitle} titleStyle="text-3xl sm:text-5xl" />
@@ -51,6 +51,7 @@ const Partners = () => {
                 {/* Partners Section */}
             <div className="const_direction w-full h-88 mt-8 padding-x overflow-hidden bg-tertiary flex flex-col">
                 <div
+                    data-aos="fade-left"
                     id="partners"
                     ref={partnersScroller}
                     className="w-full h-3/4 overflow-hidden scroll-smooth"

@@ -22,7 +22,7 @@ const Pricing = () => {
         <meta name="keywords" content="Rusd real Home Hero website estate hotel Serviced apartments hotels chalets search ksa عقارات إجارات إستراحات موقع شقق مفروشة بحث رشد وحدات خاصة شاليهات " />
       </Helmet>
 
-      <div className="w-fti min-h-screen padding-x pt-20 ">
+      <div data-aos="fade-down" className="w-fti min-h-screen padding-x pt-20 ">
         <Title theTitle={pricingData.title} titleStyle="text-3xl sm:text-5xl">
           <p className="text-lg sm:text-2xl font-bold">{pricingData.description}</p>
         </Title>
@@ -86,11 +86,13 @@ const Pricing = () => {
                 />
               ))}
 
-                <CustomButton
-                label={currentLanguage.pricingData.theButton.label}
-                event={() => {}}
-                theStyle="w-full sel sm:w-xs py-4 xl:w-40 text-white md:py-2 bg-secondary"
-                />
+                <a href="#contact">
+                  <CustomButton
+                    label={currentLanguage.pricingData.theButton.label}
+                    event={() => {}}
+                    theStyle="w-full sel sm:w-xs py-4 xl:w-40 text-white md:py-2 bg-secondary"
+                  />
+                </a>
             </div>
           </div>
         </div>

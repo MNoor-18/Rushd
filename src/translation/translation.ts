@@ -88,25 +88,25 @@ export const RushdContent: IRushdContent = {
           {
             title: "Hotels",
             name: "Hotels",
-            description: "Rushd is ideal for hotel management, offering comprehensive solutions to improve bookings, manage units, and enhance the guest experience. It also helps streamline operations and increase service efficiency.",
+            description: "Roshd system offers a comprehensive solution for managing hotels of all sizes, helping improve performance and streamline administrative operations. The system is distinguished by its ability to integrate all booking channels in one place, along with providing an intelligent pricing system that automatically adapts to peak seasons and market events. It offers advanced tools for automating daily tasks such as guest check-in and room allocation, in addition to an integrated customer relationship management system that tracks guest preferences and enhances their experience. The system also provides detailed performance reports that assist in making managerial decisions. What sets the system apart is its flexibility to adapt to the needs of different types of hotels, whether independent or part of a hotel chain. The outcomes include improved occupancy rates, reduced operational costs, and increased customer satisfaction, making it an effective tool for achieving growth and profitability in the hospitality sector.",
             image: "/assets/hotel.jpg",
           },
           {
             title: "Serviced apartments",
             name: "Serviced apartments",
-            description: "Serviced apartments description goes here...",
+            description: "Roshd system transforms furnished apartment management into a profitable, organized, and hassle-free process. It allows you to manage your apartment easily from anywhere using your phone or computer. The system helps increase revenue through direct bookings and a smart pricing system that adapts to market conditions. It is distinguished by its ability to save daily working hours by automating routine administrative processes, reducing the time and effort needed for management. It also contributes to ensuring guest satisfaction and achieving high ratings, leading to repeat bookings and increased revenue. By choosing the package that suits your needs, you can turn your furnished apartment into a successful and profitable investment with minimal administrative effort, while maintaining high-quality service for your guests.",
             image: "/assets/apartment.jpg",
           },
           {
             title: "Chalets",
             name: "Chalets",
-            description: "Chalets description goes here...",
+            description: "Roshd system offers a comprehensive solution for efficiently managing chalets. It simplifies the booking management process by automatically synchronizing reservations from various platforms into one place, with a centralized calendar updated in real time. The system also enables direct bookings to avoid external platform commissions. It features smart tools to boost revenue, such as automatic pricing based on seasonality and competition, and the ability to offer discounts for repeat bookings. Additionally, it automates daily tasks like sending booking confirmations and cleaning alerts to enhance guest service, The system includes a multi-option payment gateway, a review management system, and supports smart lock, It also provides accurate performance reports for occupancy tracking and financial analysis, Subscription plans are available to suit chalets of all sizes, with integrated marketing capabilities, This makes chalet management easy and profitable, saving time and reducing costs, all through a user-friendly interface that requires no technical expertise.",
             image: "/assets/chalets.jpg",
           },
           {
             title: "Private units",
             name: "Private units",
-            description: "Private units description goes here...",
+            description: "Roshd system empowers private unit owners to achieve numerous benefits by enabling them to manage one or multiple units effortlessly and without complications. It boosts profitability through direct bookings and the use of smart pricing systems that adapt to market conditions. The system saves owners time by automating daily routine operations, reducing the effort and time required for management, Additionally, it significantly enhances the guest experience, ensuring high ratings and encouraging repeat bookings, With the use of this system, private unit owners can turn their properties into a stable and profitable source of income, while maintaining a simple management process that requires only a few minutes of daily follow-up.",
             image: "/assets/private_units.jpg",
           },
         ],
@@ -198,17 +198,95 @@ export const RushdContent: IRushdContent = {
       sectionTitle: "Clients Feedback",
       feedbacks: [
         {
-          name: "Client",
+          name: "Abdulrahman Mohammed",
           rating: 5,
-          comment: "Rushd exceeded our expectations. It saved us time and allowed us to focus on service.",
-          imageUrl: "/images/user.jpg",
+          comment: "Rushd completely changed our management style. We now have a system that consolidates everything in one place, saving time and effort noticeably.",
+          imageUrl: "images/user.jpg"
         },
         {
-          name: "Client",
-          rating: 5,
-          comment: "Finally, a local system that truly understands our needs.",
-          imageUrl: "/images/user.jpg",
+          name: "Nouf Al-Otaibi",
+          rating: 4,
+          comment: "The integration with Airbnb and Booking is very smooth, and we didn't need to check multiple platforms.",
+          imageUrl: "images/user.jpg"
         },
+        {
+          name: "Salman Hussain",
+          rating: 5,
+          comment: "Finally, a local system that understands our needs and provides tools that fit the Saudi market.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Hind Said",
+          rating: 4,
+          comment: "The user interface is clear and easy, even for those with no technical experience.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Turki Al-Zahrani",
+          rating: 5,
+          comment: "With Rushd, we were able to track occupancy and income accurately, and make better decisions.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Dalal Abdullah",
+          rating: 4,
+          comment: "The customer support is fast and responsive, which made me trust the system even more.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Majed Al-Anzi",
+          rating: 5,
+          comment: "The dynamic pricing feature gave us great flexibility, especially during peak seasons.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Amani Al-Sibai",
+          rating: 4,
+          comment: "I was hesitant at first, but the free trial allowed me to try it without commitment, and I was really impressed with the platform.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Faisal Al-Dosari",
+          rating: 5,
+          comment: "What I liked the most is receiving payments directly, without intermediaries.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Mashael Mohammed",
+          rating: 5,
+          comment: "Honestly, I didn't expect to find such a high-quality local platform, Rushd exceeded my expectations.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Yasser Saleh",
+          rating: 5,
+          comment: "I manage all my properties from a single dashboard, which saved me from tracking the small details.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Sarah Al-Abdullah",
+          rating: 4,
+          comment: "Customer service is excellent, they always respond quickly and with respect.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Rakan Abdullah",
+          rating: 5,
+          comment: "The smart analytics and accurate reports helped us develop our services and understand customer behavior more.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Nadia Bauzeer",
+          rating: 4,
+          comment: "The platform saved us a lot of time and effort.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "Ahmed Said",
+          rating: 4,
+          comment: "The online payment system and ready-made reports made everything easier and faster.",
+          imageUrl: "images/user.jpg"
+        }
       ],
     },
 
@@ -389,25 +467,25 @@ export const RushdContent: IRushdContent = {
           {
             title: "Hotels",
             name: "الفنادق",
-            description: "رشـد هو الحل المثالي لإدارة الفنادق، حيث يوفر حلولاً شاملة لتحسين الحجوزات، إدارة الوحدات، وتحسين تجربة الضيوف.",
+            description: "نظام رشد يقدم حلاً شاملاً لإدارة الفنادق بمختلف أحجامها، حيث يساعد في تحسين الأداء وتبسيط العمليات الإدارية، يتميز النظام بقدرته على دمج جميع قنوات الحجز في مكان واحد، مع توفير نظام تسعير ذكي يتكيف تلقائياً مع مواسم الذروة وأحداث السوق، يوفر النظام أدوات متقدمة لأتمتة المهام اليومية مثل استقبال الضيوف وتوزيع الغرف، بالإضافة إلى نظام متكامل لإدارة علاقات العملاء يتتبع تفضيلاتهم ويحسن تجربتهم. كما يقدم تقارير أداء تفصيلية تساعد في اتخاذ القرارات الإدارية، أهم ما يميز النظام هو مرونته في التكيف مع احتياجات مختلف أنواع الفنادق، سواءً كانت مستقلة أو جزءاً من سلسلة فندقية. النتائج تشمل تحسين معدلات الإشغال، خفض التكاليف التشغيلية، ورفع مستوى رضا العملاء، مما يجعله أداة فعالة لتحقيق النمو والربحية في القطاع الفندقي.",
             image: "/assets/hotel.jpg",
           },
           {
             title: "Apbartments",
             name: "الشقق المفروشة",
-            description: "رشـد يناسب إدارة الشقق المفروشة ويوفر ميزات متقدمة لإدارة الوحدات والإشغال.",
+            description: "نظام رشد يحوّل إدارة الشقق المفروشة إلى عملية مربحة ومنظمة وخالية من التعقيدات. فهو يتيح لك إدارة شقتك بسهولة من أي مكان عبر هاتفك أو حاسوبك، كما يساعدك على زيادة الإيرادات من خلال الحجز المباشر ونظام التسعير الذكي الذي يتكيف مع ظروف السوق، يتميز النظام بقدرته على توفير ساعات العمل اليومية بفضل أتمتة العمليات الإدارية الروتينية، مما يقلل من الجهد والوقت المطلوبين للإدارة. كما يساهم في ضمان رضا الضيوف وتحقيق تقييمات عالية، مما يؤدي إلى حجوزات متكررة وزيادة في الإيرادات، باختيار الباقة المناسبة لاحتياجاتك، يمكنك تحويل شقتك المفروشة إلى استثمار ناجح ومربح بأقل جهد إداري ممكن، مع الحفاظ على جودة الخدمة المقدمة للضيوف.",
             image: "/assets/apartment.jpg",
           },
           {
             title: "Chalets",
             name: "الشاليهات",
-            description: "رشـد يساعد في إدارة الشاليهات ويوفر طريقة سهلة لإدارة الحجوزات والعملاء.",
+            description: "نظام رشد يُقدم حلاً متكاملاً لإدارة الشاليهات بكل كفاءة، حيث يُسهل عملية إدارة الحجوزات من خلال مزامنتها تلقائياً من مختلف المنصات في مكان واحد، مع تقويم مركزي محدث لحظياً. كما يتيح الحجز المباشر لتجنب عمولات المنصات الخارجية، يتميز النظام بأدوات ذكية لتحسين الإيرادات، مثل التسعير التلقائي حسب الموسم والمنافسة، وإمكانية منح خصومات للحجوزات المتكررة. كما يُوفر مميزات أتمتة المهام اليومية كإرسال تأكيدات الحجز وتنبيهات التنظيف، لتحسين خدمة الضيوف، يتضمن النظام بوابة دفع متعددة الخيارات ونظام تقييمات، مع دعم الأقفال الذكية، ويقدم تقارير أداء دقيقة لمتابعة الإشغال والتحليل المالي، تتنوع خطط الاشتراك لتلائم جميع أحجام الشاليهات، مع إمكانيات تسويقية متكاملة، بذلك يحول النظام إدارة الشاليهات إلى عملية سهلة ومربحة، مع توفير الوقت وخفض التكاليف، عبر واجهة بسيطة لا تحتاج خبرة تقنية.",
             image: "/assets/chalets.jpg",
           },
           {
             title: "Private units",
             name: "الوحدات الخاصة",
-            description: "رشـد يساعد في إدارة الوحدات الخاصة ويوفر خيارات مرنة لإدارة عمليات الحجز والدفع.",
+            description: "نظام رشد يمكّن ملاك الوحدات الخاصة من تحقيق العديد من الفوائد، فهو يساعدهم في إدارة وحدة واحدة أو عدة وحدات بكل سهولة وبدون أي تعقيدات، كما يعمل على زيادة الأرباح من خلال تمكين الحجز المباشر واستخدام أنظمة التسعير الذكية التي تتكيف مع ظروف السوق، ويوفر النظام وقت الملاك عن طريق أتمتة العمليات اليومية الروتينية، مما يقلل من الجهد والوقت المطلوب للإدارة، بالإضافة إلى ذلك، يساهم النظام في تحسين تجربة الضيوف بشكل ملحوظ، مما يضمن الحصول على تقييمات عالية ويشجع على تكرار الحجوزات من قبل العملاء، بفضل استخدام هذا النظام، يصبح بإمكان ملاك الوحدات الخاصة تحويل ممتلكاتهم إلى مصدر دخل مستقر ومربح، مع الحفاظ على بساطة عملية الإدارة التي لا تحتاج سوى لبضع دقائق من المتابعة اليومية.",
             image: "/assets/private_units.jpg",
           },
         ],
@@ -498,17 +576,95 @@ export const RushdContent: IRushdContent = {
       sectionTitle: "آراء العملاء",
       feedbacks: [
         {
-          name: "عميل",
+          name: "عبدالرحمن محمد",
           rating: 5,
-          comment: "رشد فاقت توقعاتنا. وفروا علينا كثير وخلونا نركز على تطوير الخدمة",
-          imageUrl: "/images/user.jpg",
+          comment: "رُشْد غيّر أسلوب إدارتنا بالكامل. صار عندنا نظام يجمع كل شيء بمكان واحد ويوفر وقت وجهد بشكل ملحوظ.",
+          imageUrl: "images/user.jpg"
         },
         {
-          name: "عميل",
-          rating: 5,
-          comment: "أخيراً نظام محلي فاهم احتياجنا.",
-          imageUrl: "/images/user.jpg",
+          name: "نوف العتيبي",
+          rating: 4,
+          comment: "الربط مع Airbnb وBooking سلس جداً، وما احتجنا نراجع أكثر من منصة.",
+          imageUrl: "images/user.jpg"
         },
+        {
+          name: "سلمان حسين",
+          rating: 5,
+          comment: "أخيرًا نظام محلي يفهم احتياجاتنا ويوفر أدوات تناسب السوق السعودي.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "هند سعيد",
+          rating: 4,
+          comment: "واجهة الاستخدام واضحة وسهلة حتى للي ما عنده خبرة تقنية.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "تركي الزهراني",
+          rating: 5,
+          comment: "مع رُشْد قدرنا نراقب الإشغال والدخل بشكل دقيق ونتخذ قرارات أفضل.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "دلال عبدالله",
+          rating: 4,
+          comment: "الدعم الفني سريع ومتجاوب، وهذا خلاني أثق بالنظام أكثر.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "ماجد العنزي",
+          rating: 5,
+          comment: "إمكانية التسعير الديناميكي أعطتنا مرونة كبيرة، خاصة وقت المواسم.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "أماني السبيعي",
+          rating: 4,
+          comment: "كنت متردد بالبداية، لكن التجربة المجانية خلتني أجرب بدون التزام وفعلاً أعجبتني المنصة.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "فيصل الدوسري",
+          rating: 5,
+          comment: "أكثر شيء ريّحني هو استقبال المدفوعات مباشرة بدون وسطاء.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "مشاعل محمد",
+          rating: 5,
+          comment: "بصراحة ما توقعت ألقى منصة محلية بهذه الجودة، رُشْد فاقت توقعاتي.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "ياسر صالح",
+          rating: 5,
+          comment: "أدير كل وحداتي من لوحة تحكم واحدة، وهذا وفر علي متابعة التفاصيل الصغيرة.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "سارة العبدالله",
+          rating: 4,
+          comment: "خدمة العملاء رائعة، دائمًا يردون بسرعة وبأسلوب محترم.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "راكان عبد الله",
+          rating: 5,
+          comment: "التحليلات الذكية والتقارير الدقيقة ساعدتنا نطور خدماتنا ونفهم سلوك العملاء أكثر.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "نادية باوزير",
+          rating: 4,
+          comment: "منصة وفرت علينا وقت وجهد كبير.",
+          imageUrl: "images/user.jpg"
+        },
+        {
+          name: "أحمد سعيد",
+          rating: 4,
+          comment: "الدفع الإلكتروني والتقارير الجاهزة خلت كل شيء أسهل وأسرع.",
+          imageUrl: "images/user.jpg"
+        }
       ],
     },
     faqData: {

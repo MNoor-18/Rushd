@@ -11,7 +11,7 @@ const FAQ = () => {
     };
 
   return (
-    <section className="w-full padding-x py-12 px-4">
+    <section data-aos="fade-right" className="w-full padding-x py-12 px-4">
       <Title theTitle={currentLanguage.faqData.sectionTitle} titleStyle="text-4xl font-semibold">
         <h4 className="text-4xl font-semibold text-gray-500 ">{currentLanguage.faqData.sectionSubtitle}</h4>
       </Title>

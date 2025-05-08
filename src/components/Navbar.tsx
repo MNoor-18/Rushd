@@ -25,7 +25,7 @@ const Navbar = () => {
   const langButton = currentLanguage == RushdContent.ar ? "English" : "العربية";
 
   return (
-    <header className="const_direction w-full h-20 sm:h-24 bg-white px-5 sm:px-10 shadow-md">
+    <header data-aos="fade-down" className="const_direction w-full h-20 sm:h-24 bg-white px-5 sm:px-10 shadow-md">
       <div className="w-full h-full flex items-center justify-between">
 
         {/* Logo */}
@@ -33,7 +33,7 @@ const Navbar = () => {
           <img src="/assets/dark-logo.png" alt="Rushd Logo" className="w-full h-full object-cover" />
         </a>
 
-        {/* Links and Buttons */}
+        {/* Navbar Buttons */}
         <div className="hidden md:flex items-center gap-5">
           <nav className="flex items-center gap-2 xl:gap-4">
             {language.navbarLinks.map((link) => (
@@ -46,7 +46,7 @@ const Navbar = () => {
               </a>
             ))}
           </nav>
-            <button className=" px-1 py-0.5 md:py-1 md:px-2 text-white  rounded-md text-sm md:text-lg border bg-secondary" onClick={() => {
+            <button className=" px-1 py-0.5 md:py-1 md:px-2 text-white rounded-md text-sm md:text-lg border bg-secondary" onClick={() => {
               setCurrentLanguage(currentLanguage == RushdContent.ar 
                 ? RushdContent.en
                 : RushdContent.ar

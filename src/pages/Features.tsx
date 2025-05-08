@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 const Features = () => {
   const currentLanguage = useLanguage();
   return (
-    <div className="w-full padding-x py-10 ">
+    <div data-aos="fade-up" className="w-full padding-x py-10 ">
 
       <Helmet>
               <title>Rushd</title>

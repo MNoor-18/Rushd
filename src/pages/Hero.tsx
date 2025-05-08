@@ -17,7 +17,7 @@ const Hero = () => {
       {/* BACKGROUND OF HERO SECTION */}
       <div className="w-full h-full absolute left-0 top-0 -z-10 bg-[url('./public/assets/hero-bg.jpg')] bg-cover " />
 
-      <div className="w-full h-full padding-x flex flex-col gap-5 items-center justify-center lg:flex-row xl:items-start md:pt-[20%] lg:pt-[10%] lg:justify-between">
+      <div data-aos="fade-up" className="w-full h-full padding-x flex flex-col gap-5 items-center justify-center lg:flex-row xl:items-start md:pt-[20%] lg:pt-[10%] lg:justify-between">
         <div className=" max-w-full order-last lg:order-first flex flex-col items-center lg:items-start gap-8 text-white">
           <h1 className="text-4xl text-center lg:leading-20 lg:text-start font-semibold md:text-5xl md:max-w-[650px] xl:text-[64px] ">
             {currentLanguage.heroData.title}
@@ -29,9 +29,11 @@ const Hero = () => {
           </h3>
 
           <div className="w-[500px] flex justify-center">
-            <CustomButton label={currentLanguage.heroData.buttonText}theStyle="w-60 h-[43px] px-18 bg-secondary text-white shadow-sm shadow-[#FF5A1F] " event={() => {}}>
-              <img src="./public/assets/tap.png" width="34px" height="34px" className="right-3 " alt="tap" />
-            </CustomButton>
+            <a href="#pricing">
+              <CustomButton label={currentLanguage.heroData.buttonText}theStyle="w-60 h-[43px] px-18 bg-secondary text-white shadow-sm shadow-[#FF5A1F] " event={() => {}}>
+                <img src="./public/assets/tap.png" width="34px" height="34px" className="right-3 " alt="tap" />
+              </CustomButton>
+            </a>
           </div>
         </div>
 
