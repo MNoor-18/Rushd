@@ -49,7 +49,7 @@ function App() {
           <Hero />
         </section>
 
-        <section id="features" className="scroll-mt-20 sm:scroll-mt-29">
+        <section className="scroll-mt-20 sm:scroll-mt-29">
           <Features />
         </section>
 

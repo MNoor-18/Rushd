@@ -64,10 +64,6 @@ const Footer = () => {
           <div className="w-36 h-14">
             <img src="./assets/white-logo.png" alt="Logo" />
           </div>
-
-          <div className="mt-6 text-xs text-white text-center sm:text-start max-w-[200px]">
-            <p>{currentLanguage.contact.description}</p>
-          </div>
         </div>
 
         {/* FOOTER Form SECTION */}
