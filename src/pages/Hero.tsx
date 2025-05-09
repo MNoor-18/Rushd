@@ -6,7 +6,7 @@ const Hero = () => {
   const currentLanguage = useLanguage();
 
   return (
-    <div className="w-full h-screen relative overflow-hidden padding-y bg-gradient-to-r from-[#1C1C1C] via-[#1c1c1cfe] to-[#1c1c1cf8] ">
+    <div className="w-full min-h-screen pt-20 md:pt-24 relative overflow-hidden bg-gradient-to-r from-[#1C1C1C] via-[#1c1c1cfe] to-[#1c1c1cf8] ">
 
       <Helmet>
         <title>Home</title>
