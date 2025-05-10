@@ -118,7 +118,6 @@ const Contact = () => {
 
   return (
     <div
-      data-aos="fade-up"
       className="w-full min-h-screen h-fit py-4 lg:py-16 flex flex-col items-center gap-10 padding-x sm:p4-10 lg:flex-row lg:items-start "
     >
       <Helmet>
@@ -141,7 +140,7 @@ const Contact = () => {
           </p>
         </Title>
 
-        <div className="mt-8 md:mt-14 px-5 sm:px-10">
+        <div data-aos="fade-up" className="mt-8 md:mt-14 px-5 sm:px-10">
           <img
             className=" h-25 w-25 md:h-40 md:w-40 sm:h-52 sm:w-52 lg:h-82 lg:w-76 object-contain"
             src="./assets/rushd-sign.png"

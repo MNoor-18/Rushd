@@ -116,6 +116,13 @@ export const RushdContent: IRushdContent = {
               "Roshd system empowers private unit owners to achieve numerous benefits by enabling them to manage one or multiple units effortlessly and without complications. It boosts profitability through direct bookings and the use of smart pricing systems that adapt to market conditions. The system saves owners time by automating daily routine operations, reducing the effort and time required for management, Additionally, it significantly enhances the guest experience, ensuring high ratings and encouraging repeat bookings, With the use of this system, private unit owners can turn their properties into a stable and profitable source of income, while maintaining a simple management process that requires only a few minutes of daily follow-up.",
             image: "/assets/private_units.jpg",
           },
+          {
+            title: "halls",
+            name: "Halls",
+            description:
+              "With Rushd, venue owners now have a smart tool that boosts profits and simplifies operations! Through accurate reports and real-time analytics, they can easily monitor bookings, occupancy rates, and income — helping them make smarter decisions to enhance performance and increase revenue. With features like dynamic pricing and an integrated CRM, customer communication becomes more professional, ensuring an exceptional experience and lasting loyalty. Save time… and grow your income with Rushd! Would you like it in a shorter version for a social media post?",
+            image: "/assets/hall.jpg",
+          },
         ],
       },
     },
@@ -551,6 +558,13 @@ export const RushdContent: IRushdContent = {
             description:
               "نظام رشد يمكّن ملاك الوحدات الخاصة من تحقيق العديد من الفوائد، فهو يساعدهم في إدارة وحدة واحدة أو عدة وحدات بكل سهولة وبدون أي تعقيدات، كما يعمل على زيادة الأرباح من خلال تمكين الحجز المباشر واستخدام أنظمة التسعير الذكية التي تتكيف مع ظروف السوق، ويوفر النظام وقت الملاك عن طريق أتمتة العمليات اليومية الروتينية، مما يقلل من الجهد والوقت المطلوب للإدارة، بالإضافة إلى ذلك، يساهم النظام في تحسين تجربة الضيوف بشكل ملحوظ، مما يضمن الحصول على تقييمات عالية ويشجع على تكرار الحجوزات من قبل العملاء، بفضل استخدام هذا النظام، يصبح بإمكان ملاك الوحدات الخاصة تحويل ممتلكاتهم إلى مصدر دخل مستقر ومربح، مع الحفاظ على بساطة عملية الإدارة التي لا تحتاج سوى لبضع دقائق من المتابعة اليومية.",
             image: "/assets/private_units.jpg",
+          },
+          {
+            title: "halls",
+            name: "القاعات",
+            description:
+              "بمنصة رشد، أصحاب القاعات يملكون اليوم أداة ذكية تعزز من أرباحهم وتبسط إدارتهم! من خلال تقارير دقيقة وتحليلات فورية، يمكنهم تتبع الحجوزات ونِسب الإشغال والدخل بكل سهولة، واتخاذ قرارات تساعدهم على تحسين الأداء وزيادة العائد. ومع أدوات مثل التسعير الديناميكي ونظام CRM، يصبح التواصل مع العملاء أكثر احترافية، ما يضمن تجربة مميزة للزوار وولاء طويل الأمد. اختصر الجهد  وارفع دخلك مع رُشْد!هل ترغب بتعديل الفقرة لتناسب إعلانًا مرئيًا أو منشورًا على وسائل التواصل؟",
+            image: "/assets/hall.jpg",
           },
         ],
       },

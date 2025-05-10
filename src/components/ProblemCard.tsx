@@ -17,4 +17,4 @@ const ProblemCard = ({number, bgColor, textColor, title, theExplanation, numStyl
   )
 }
 
-export default ProblemCard
+export default ProblemCard;
