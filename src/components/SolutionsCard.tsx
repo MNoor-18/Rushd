@@ -1,8 +1,11 @@
 import { SolutionsCardProps } from "../types";
 
 const SolutionsCard = ({ theTitle, description }: SolutionsCardProps) => {
+
+  const selectedLang = localStorage.getItem("currentLanguage") || "ar";
+
   return (
-    <div className="w-full h-fit min-h-18 bg-tertiary border-[1px] rounded-xl flex flex-wrap items-center p-4 gap-4">
+    <div data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"} className="w-full h-fit min-h-18 bg-tertiary border-[1px] rounded-xl flex flex-wrap items-center p-4 gap-4">
       <div className="w-[30px] h-[30px] flex items-center justify-center rounded-full bg-secondary">
         <img
           src="/assets/check-small.png"

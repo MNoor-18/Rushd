@@ -7,15 +7,19 @@ const WhoCanUseRushd = () => {
   const currentLanguage = useLanguage();
   const rushdData = currentLanguage.featuresData.whoCanUseRushd;
 
+  const selectedLang = localStorage.getItem("currentLanguage") || "ar";
+
   const [activeTab, setActiveTab] = useState("Hotels");
 
   return (
-    <div data-aos="fade-up" className="h-fit py-16 ">
-
+    <div className="h-fit py-16 ">
       <Helmet>
         <title>Rush</title>
         <meta name="description" content="Rushd" />
-        <meta name="keywords" content="Rusd real Home Hero website estate hotel hotels chalets search ksa عقارات إجارات إستراحات موقع بحث رشد وحدات خاصة شاليهات " />
+        <meta
+          name="keywords"
+          content="Rusd real Home Hero website estate hotel hotels chalets search ksa عقارات إجارات إستراحات موقع بحث رشد وحدات خاصة شاليهات "
+        />
       </Helmet>
 
       {/* Title Section */}
@@ -28,7 +32,7 @@ const WhoCanUseRushd = () => {
       </div>
 
       {/* Tabs Section */}
-      <div className="w-full h-17 mt-6 sm:px-10 md:px-14 xl:px-22 2xl:px-32 ">
+      <div data-aos="zoom-in" className="w-full h-17 mt-6 sm:px-10 md:px-14 xl:px-22 2xl:px-32 ">
         <div className="w-full h-full flex items-center justify-around md:rounded-xl bg-[#F6E7C6] shadow-md shadow-gray-400 flex-1">
           {rushdData.categories.map((item) => (
             <button
@@ -36,7 +40,7 @@ const WhoCanUseRushd = () => {
                 activeTab === item.title
                   ? "bg-[#FBF4E2] shadow-md text-black"
                   : "text-gray-600"
-                }
+              }
               `}
               onClick={() => setActiveTab(item.title)}
               key={item.name}
@@ -50,23 +54,28 @@ const WhoCanUseRushd = () => {
       {/* Content Section */}
       <div className="w-full h-fit my-4 flex">
         {rushdData.categories.map(
-          (item) => activeTab === item.title && (
+          (item) =>
+            activeTab === item.title && (
               <div
                 key={item.name}
-                className="w-full flex flex-col lg:flex-row items-center pt-2 md:pt-8 lg:items-start justify-between bg-white padding-x "
+                className="w-full flex flex-col lg:flex-row gap-10 lg:gap-5 items-center pt-2 md:pt-8 lg:items-start justify-between bg-white padding-x "
               >
                 {/* Text Section */}
-                <div className="h-full w-full lg:w-1/2 xl:w-lg ">
+                <div 
+                data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"} 
+                className="h-full w-full lg:w-1/2 xl:w-lg ">
                   <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
                     {item.name}
                   </h2>
-                  <p className="mt-4 px-2 text-sm sm:text-base md:text-lg text-gray-600">
+                  <p className="mt-4 lg:px-2 text-sm sm:text-base md:text-lg text-gray-600">
                     {item.description}
                   </p>
                 </div>
 
                 {/* Image Section */}
-                <div className="w-xs h-fit sm:w-sm order-first pt-5 xl:w-lg">
+                <div 
+                data-aos={selectedLang === "ar" ? "fade-left" : "fade-right"} 
+                className=" h-fit order-first pt-5 xl:w-lg">
                   <img
                     src={item.image}
                     className="w-full h-auto object-cover rounded-lg"

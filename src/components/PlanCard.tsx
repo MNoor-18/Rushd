@@ -3,6 +3,7 @@ import { PlanCardProps } from "../types";
 const PlanCard = ({ name, price, isActive, onSelect }: PlanCardProps) => {
   return (
     <button
+      data-aos="zoom-in"
       onClick={onSelect}
       className={`w-full xl:w-125 p-3 flex items-center justify-between xl:p-6 rounded-xl shadow-gray-400 shadow-md transition-all 
           duration-300 ${isActive ? "bg-black text-white" : "bg-[#FBF4E2] text-black"}

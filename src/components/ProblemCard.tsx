@@ -1,8 +1,11 @@
 import { ProblemCardProps } from "../types";
 
 const ProblemCard = ({number, bgColor, textColor, title, theExplanation, numStyle}: ProblemCardProps) => {
+
+  const selectedLang = localStorage.getItem("currentLanguage") || "ar";
+
   return (
-    <div className={`w-full min-h-fit h-[220px] md:w-[315px] md:h-[380px] rounded-xl flex flex-col gap-2 py-8 md:py-14 px-8 ${textColor} ${bgColor}`}>
+    <div data-aos={selectedLang === "ar" ? "fade-left" : "fade-right"} className={`w-full min-h-fit h-[220px] md:w-[315px] md:h-[380px] rounded-xl flex flex-col gap-2 py-8 md:py-14 px-8 ${textColor} ${bgColor}`}>
         <div className="flex-1">
             <span className={`text-4xl md:text-5xl font-extrabold text-transparent ${numStyle} mb-0.5 ${textColor}`}>{number}</span>
             <h2 className="text-2xl md:text-[32px] font-semibold max-w-[200px]">{title}</h2>
