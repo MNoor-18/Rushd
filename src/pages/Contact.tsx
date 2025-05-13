@@ -118,7 +118,7 @@ const Contact = () => {
 
   return (
     <div
-      className="w-full min-h-screen h-fit py-4 lg:py-16 flex flex-col items-center gap-10 padding-x sm:p4-10 lg:flex-row lg:items-start "
+      className="w-full min-h-screen h-fit pb-4 pt-10 lg:pb-10 flex gap-10 padding-x lg:flex-row lg:items-start "
     >
       <Helmet>
         <title>Rushd</title>
@@ -130,7 +130,7 @@ const Contact = () => {
       </Helmet>
 
       {/* Sign Section */}
-      <div className="w-full lg:w-1/2 pt-5 flex flex-col items-center lg:items-start">
+      <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
         <Title
           theTitle={currentLanguage.contact.title}
           titleStyle="text-3xl sm:text-5xl lg:text-7xl text-primary"

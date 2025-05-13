@@ -12,7 +12,7 @@ const WhoCanUseRushd = () => {
   const [activeTab, setActiveTab] = useState("Hotels");
 
   return (
-    <div className="h-fit py-16 ">
+    <div className="h-fit py-16">
       <Helmet>
         <title>Rush</title>
         <meta name="description" content="Rushd" />
@@ -58,12 +58,12 @@ const WhoCanUseRushd = () => {
             activeTab === item.title && (
               <div
                 key={item.name}
-                className="w-full flex flex-col lg:flex-row gap-10 lg:gap-5 items-center pt-2 md:pt-8 lg:items-start justify-between bg-white padding-x "
+                className="w-full flex flex-col xl:flex-row gap-10 lg:gap-5 items-center pt-2 md:pt-8 xl:items-start bg-white padding-x md:justify-between xxl:justify-center xxl:gap-20 "
               >
                 {/* Text Section */}
                 <div 
                 data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"} 
-                className="h-full w-full lg:w-1/2 xl:w-lg ">
+                className="h-full w-full xl:w-1/2 xl:w-lg ">
                   <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
                     {item.name}
                   </h2>
@@ -75,7 +75,7 @@ const WhoCanUseRushd = () => {
                 {/* Image Section */}
                 <div 
                 data-aos={selectedLang === "ar" ? "fade-left" : "fade-right"} 
-                className=" h-fit order-first pt-5 xl:w-lg">
+                className="w-full h-fit order-first pt-5 sm:w-lg">
                   <img
                     src={item.image}
                     className="w-full h-auto object-cover rounded-lg"

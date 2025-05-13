@@ -6,7 +6,7 @@ const Solutions = () => {
   const currentLanguage = useLanguage();
 
   return (
-    <div id="features"  className="w-full h-fit pt-10 scroll-mt-20 sm:scroll-mt-29">
+    <div id="features" className="w-full h-fit pt-10 scroll-mt-20 sm:scroll-mt-24">
       <Title
         theTitle={currentLanguage.featuresData.solutions.title}
         titleStyle="text-3xl sm:text-5xl"

@@ -26,34 +26,35 @@ const FAQ = () => {
       <div 
         className="mt-8 space-y-5">
         {currentLanguage.faqData.questions.map((item, index) => (
-          <div
-            data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"}
-            key={index}
-            className={`${
-              activeIndex === index
-                ? "bg-whit border-black"
-                : "bg-tertiary border-gray-300"
-            } border-gray-300 border-[1px] rounded-lg transition-all`}
-          >
-            <button
-              onClick={() => toggle(index)}
-              className="w-full px-4 py-3 flex justify-between items-center font-medium text-[16px] "
+          <div data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"}>
+            <div
+              key={index}
+              className={`${
+                activeIndex === index
+                  ? "bg-whit border-black"
+                  : "bg-tertiary border-gray-300"
+              } border-gray-300 border-[1px] rounded-lg transition-all`}
             >
-              {item.question}
-              <span>
-                <img
-                  src="./assets/chevron.png"
-                  className={`w-2.5 h-2.5 ${
-                    activeIndex === index ? "rotate-180" : ""
-                  } `}
-                  alt="chevron"
-                />
-              </span>
-            </button>
+              <button
+                onClick={() => toggle(index)}
+                className="w-full px-4 py-3 flex justify-between items-center font-medium text-[16px] "
+              >
+                {item.question}
+                <span>
+                  <img
+                    src="./assets/chevron.png"
+                    className={`w-2.5 h-2.5 ${
+                      activeIndex === index ? "rotate-180" : ""
+                    } `}
+                    alt="chevron"
+                  />
+                </span>
+              </button>
 
-            {activeIndex === index && (
-              <div className="px-4 pb-4 text-[16px]">{item.answer}</div>
-            )}
+              {activeIndex === index && (
+                <div className="px-4 pb-4 text-[16px]">{item.answer}</div>
+              )}
+            </div>
           </div>
         ))}
       </div>

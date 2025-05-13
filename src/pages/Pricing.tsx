@@ -20,11 +20,11 @@ const Pricing = () => {
         <meta name="description" content="Rushd" />
         <meta
           name="keywords"
-          content="Rusd real Home Hero website estate hotel Serviced apartments hotels chalets search ksa عقارات إجارات إستراحات موقع شقق مفروشة بحث رشد وحدات خاصة شاليهات "
+          content="rusd real Home Hero website estate hotel Serviced apartments hotels chalets search ksa عقارات إجارات إستراحات موقع شقق مفروشة بحث رشد وحدات خاصة شاليهات "
         />
       </Helmet>
 
-      <div className="w-fti min-h-screen padding-x pt-20 ">
+      <div className="w-fti min-h-screen padding-x pt-10 ">
         <Title theTitle={pricingData.title} titleStyle="text-3xl sm:text-5xl">
           <p className="text-lg sm:text-2xl font-bold">
             {pricingData.description}
@@ -34,10 +34,10 @@ const Pricing = () => {
         <div className="w-full h-fit py-10 flex flex-col items-center gap-8 xl:flex-row md:justify-between xxl:justify-center xxl:gap-20">
 
           {/*############## ABOUT PLAN ##############*/}
-          <div data-aos="zoom-out" className="w-full sm:w-125 lg:w-[500px] h-full">
-            <div className="w-full h-full rounded-xl bg-[#F6E7C6] py-6 px-2 sm:py-12 sm:px-10 flex flex-col gap-4 sm:gap-4 text-sm sm:text-lg font-semibold">
+          <div data-aos="zoom-out" className="w-full sm:w-125 lg:w-full xl:w-[500px] h-full">
+            <div className="w-full h-full rounded-xl bg-[#F6E7C6] py-6 px-2 sm:py-12 sm:px-10 flex flex-col gap-4 sm:gap-5 text-sm sm:text-lg font-semibold">
 
-              <div>
+              <div className="border-b-[1px]">
                 <h4 className="text-lg sm:text-2xl">{aboutPlan?.name}</h4>
                 <h5 className="text-sm md:text-lg ">
                   {aboutPlan?.clarification && `( ${aboutPlan.clarification} )`}
@@ -45,7 +45,7 @@ const Pricing = () => {
               </div>
 
               <div>
-                <div className="text-xs sm:text-sm flex justify-between xl:flex-col">
+                <div className="text-xs sm:text-sm flex gap-2 md:gap-5 sm:flex-col lg:flex-row lg:justify-between xl:flex-col xl:justify-start">
                   <div>
                     <p>
                       {aboutPlan?.price &&
@@ -105,7 +105,7 @@ const Pricing = () => {
                 <CustomButton
                   label={currentLanguage.pricingData.theButton.label}
                   event={() => {}}
-                  theStyle="w-full md:w-xs py-4 xl:w-40 text-white md:py-2 bg-secondary"
+                  theStyle="w-full py-4 xl:w-40 text-white bg-secondary"
                 />
               </a>
             </div>

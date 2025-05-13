@@ -8,7 +8,7 @@ const Hero = () => {
   const selectedLang = localStorage.getItem("currentLanguage") || "ar";
 
   return (
-    <div className="w-full min-h-screen h-fit pt-20 md:pt-24 relative overflow-hidden bg-gradient-to-r from-[#1C1C1C] via-[#1c1c1cfe] to-[#1c1c1cf8] ">
+    <div className="w-full min-h-screen h-fit pt-20 relative overflow-hidden bg-gradient-to-r from-[#1C1C1C] via-[#1c1c1cfe] to-[#1c1c1cf8] ">
 
       <Helmet>
         <title>Home</title>
@@ -32,9 +32,9 @@ const Hero = () => {
             {currentLanguage.heroData.title}
           </h1>
 
-          <h3 className="max-w-[500px] text-center text-2xl font-semibold lg:text-left">
+          <h3 className="max-w-[500px] text-center text-2xl font-semibold lg:text-left *:p-0.5 text-secondary">
             <span>{`${currentLanguage.heroData.subtitle1} `}</span>
-            <span className="bg-[#F9F5EC] p-0.5 text-black">
+            <span>
               {currentLanguage.heroData.subtitle2}
             </span>
           </h3>
@@ -50,7 +50,7 @@ const Hero = () => {
                   src="./assets/tap.png"
                   width="34px"
                   height="34px"
-                  className="right-3 "
+                  className="right-3"
                   alt="tap"
                 />
               </CustomButton>

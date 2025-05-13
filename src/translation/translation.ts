@@ -1,4 +1,4 @@
-import { IRushdContent } from "../types";
+import { IRushdContent, IrushdPolicy } from "../types";
 
 export const RushdContent: IRushdContent = {
   en: {
@@ -91,36 +91,31 @@ export const RushdContent: IRushdContent = {
           {
             title: "Hotels",
             name: "Hotels",
-            description:
-              "Roshd system offers a comprehensive solution for managing hotels of all sizes, helping improve performance and streamline administrative operations. The system is distinguished by its ability to integrate all booking channels in one place, along with providing an intelligent pricing system that automatically adapts to peak seasons and market events. It offers advanced tools for automating daily tasks such as guest check-in and room allocation, in addition to an integrated customer relationship management system that tracks guest preferences and enhances their experience. The system also provides detailed performance reports that assist in making managerial decisions. What sets the system apart is its flexibility to adapt to the needs of different types of hotels, whether independent or part of a hotel chain. The outcomes include improved occupancy rates, reduced operational costs, and increased customer satisfaction, making it an effective tool for achieving growth and profitability in the hospitality sector.",
+            description: "Roshd System is an all-in-one hotel management solution designed to enhance performance and simplify operations. It integrates booking channels, offers smart pricing that adapts to seasons, and automates daily tasks like front desk operations and room assignments. It also includes an advanced CRM system and performance reports to support decision-making. With its flexibility to suit various types of hotels, it delivers results such as higher occupancy rates, reduced costs, and increased customer satisfaction—making it a powerful tool for growth and profitability.",
             image: "/assets/hotel.jpg",
           },
           {
             title: "Serviced apartments",
             name: "Serviced apartments",
-            description:
-              "Roshd system transforms furnished apartment management into a profitable, organized, and hassle-free process. It allows you to manage your apartment easily from anywhere using your phone or computer. The system helps increase revenue through direct bookings and a smart pricing system that adapts to market conditions. It is distinguished by its ability to save daily working hours by automating routine administrative processes, reducing the time and effort needed for management. It also contributes to ensuring guest satisfaction and achieving high ratings, leading to repeat bookings and increased revenue. By choosing the package that suits your needs, you can turn your furnished apartment into a successful and profitable investment with minimal administrative effort, while maintaining high-quality service for your guests.",
+            description: "Roshd system streamlines the management of furnished apartments, making it profitable and effortless. It enables remote control via phone or computer and boosts revenue through direct bookings and smart, market-responsive pricing. By automating daily tasks, it saves time and reduces management effort. The system enhances guest satisfaction and ratings, encouraging repeat bookings. With flexible packages, it helps transform furnished apartments into successful, high-quality investments with minimal administrative work.",
             image: "/assets/apartment.jpg",
           },
           {
             title: "Chalets",
             name: "Chalets",
-            description:
-              "Roshd system offers a comprehensive solution for efficiently managing chalets. It simplifies the booking management process by automatically synchronizing reservations from various platforms into one place, with a centralized calendar updated in real time. The system also enables direct bookings to avoid external platform commissions. It features smart tools to boost revenue, such as automatic pricing based on seasonality and competition, and the ability to offer discounts for repeat bookings. Additionally, it automates daily tasks like sending booking confirmations and cleaning alerts to enhance guest service, The system includes a multi-option payment gateway, a review management system, and supports smart lock, It also provides accurate performance reports for occupancy tracking and financial analysis, Subscription plans are available to suit chalets of all sizes, with integrated marketing capabilities, This makes chalet management easy and profitable, saving time and reducing costs, all through a user-friendly interface that requires no technical expertise.",
+            description: "Roshd System is a comprehensive solution for effective chalet management. It consolidates bookings from various platforms into a unified, real-time calendar and supports direct bookings to reduce commission costs. The system features smart pricing, discounts for repeat bookings, and automates daily tasks like booking confirmations and cleaning alerts. It also offers a multi-payment gateway, a review system, and support for smart locks, along with accurate occupancy and financial analysis reports. With its user-friendly interface and flexible subscription plans, Roshd makes chalet management more profitable with less cost and effort.",
             image: "/assets/chalets.jpg",
           },
           {
             title: "Private units",
             name: "Private units",
-            description:
-              "Roshd system empowers private unit owners to achieve numerous benefits by enabling them to manage one or multiple units effortlessly and without complications. It boosts profitability through direct bookings and the use of smart pricing systems that adapt to market conditions. The system saves owners time by automating daily routine operations, reducing the effort and time required for management, Additionally, it significantly enhances the guest experience, ensuring high ratings and encouraging repeat bookings, With the use of this system, private unit owners can turn their properties into a stable and profitable source of income, while maintaining a simple management process that requires only a few minutes of daily follow-up.",
+            description: "Roshd system enables private unit owners to manage one or multiple properties easily and efficiently. It increases profitability through direct bookings and adaptive smart pricing. By automating daily operations, it saves time and reduces management effort. The system also enhances guest satisfaction, leading to high ratings and repeat bookings. With minimal daily follow-up, owners can turn their units into a stable, profitable income source while keeping the management process simple and hassle-free.",
             image: "/assets/private_units.jpg",
           },
           {
             title: "halls",
             name: "Halls",
-            description:
-              "With Rushd, venue owners now have a smart tool that boosts profits and simplifies operations! Through accurate reports and real-time analytics, they can easily monitor bookings, occupancy rates, and income — helping them make smarter decisions to enhance performance and increase revenue. With features like dynamic pricing and an integrated CRM, customer communication becomes more professional, ensuring an exceptional experience and lasting loyalty. Save time… and grow your income with Rushd! Would you like it in a shorter version for a social media post?",
+            description: "Roshd gives venue owners a smart, all-in-one tool to boost profits and simplify operations. Real-time analytics and detailed reports help track bookings, occupancy, and income for better decision-making. Features like dynamic pricing and integrated CRM enhance customer communication and loyalty. It saves time and increases revenue—making management easier and more effective.",
             image: "/assets/hall.jpg",
           },
         ],
@@ -134,19 +129,6 @@ export const RushdContent: IRushdContent = {
       featureTitle: "Features:",
       fees: "Fees: ",
       plans: [
-        {
-          name: "Starter Plan",
-          id: "starter",
-          price: "2% per booking",
-          users: "Users: 1",
-          units: "Units: 1",
-          duration: "Subscription Duration: One year",
-          features: [
-            "Basic system features",
-            "Limited support",
-            "Auto-upgrade to the basic plan after one year",
-          ],
-        },
         {
           name: "Plus Plan",
           id: "plus",
@@ -534,36 +516,31 @@ export const RushdContent: IRushdContent = {
           {
             title: "Hotels",
             name: "الفنادق",
-            description:
-              "نظام رشد يقدم حلاً شاملاً لإدارة الفنادق بمختلف أحجامها، حيث يساعد في تحسين الأداء وتبسيط العمليات الإدارية، يتميز النظام بقدرته على دمج جميع قنوات الحجز في مكان واحد، مع توفير نظام تسعير ذكي يتكيف تلقائياً مع مواسم الذروة وأحداث السوق، يوفر النظام أدوات متقدمة لأتمتة المهام اليومية مثل استقبال الضيوف وتوزيع الغرف، بالإضافة إلى نظام متكامل لإدارة علاقات العملاء يتتبع تفضيلاتهم ويحسن تجربتهم. كما يقدم تقارير أداء تفصيلية تساعد في اتخاذ القرارات الإدارية، أهم ما يميز النظام هو مرونته في التكيف مع احتياجات مختلف أنواع الفنادق، سواءً كانت مستقلة أو جزءاً من سلسلة فندقية. النتائج تشمل تحسين معدلات الإشغال، خفض التكاليف التشغيلية، ورفع مستوى رضا العملاء، مما يجعله أداة فعالة لتحقيق النمو والربحية في القطاع الفندقي.",
+            description: "نظام رشد هو حل متكامل لإدارة الفنادق يهدف إلى تحسين الأداء وتبسيط العمليات. يجمع بين دمج قنوات الحجز، وتسعير ذكي يتكيف مع المواسم، وأتمتة للمهام اليومية مثل الاستقبال وتوزيع الغرف. كما يشمل نظام علاقات عملاء متطور وتقارير أداء تساعد في اتخاذ القرارات. يتميز بمرونته ليتناسب مع مختلف أنواع الفنادق، ويحقق نتائج مثل رفع معدلات الإشغال، تقليل التكاليف، وزيادة رضا العملاء، مما يجعله أداة فعالة للنمو والربحية.",
             image: "/assets/hotel.jpg",
           },
           {
             title: "Apbartments",
             name: "الشقق المفروشة",
-            description:
-              "نظام رشد يحوّل إدارة الشقق المفروشة إلى عملية مربحة ومنظمة وخالية من التعقيدات. فهو يتيح لك إدارة شقتك بسهولة من أي مكان عبر هاتفك أو حاسوبك، كما يساعدك على زيادة الإيرادات من خلال الحجز المباشر ونظام التسعير الذكي الذي يتكيف مع ظروف السوق، يتميز النظام بقدرته على توفير ساعات العمل اليومية بفضل أتمتة العمليات الإدارية الروتينية، مما يقلل من الجهد والوقت المطلوبين للإدارة. كما يساهم في ضمان رضا الضيوف وتحقيق تقييمات عالية، مما يؤدي إلى حجوزات متكررة وزيادة في الإيرادات، باختيار الباقة المناسبة لاحتياجاتك، يمكنك تحويل شقتك المفروشة إلى استثمار ناجح ومربح بأقل جهد إداري ممكن، مع الحفاظ على جودة الخدمة المقدمة للضيوف.",
+            description: "نظام رشد يجعل إدارة الشقق المفروشة سهلة ومربحة، من خلال التحكم الكامل عبر الهاتف أو الحاسوب. يساعد على زيادة الإيرادات بالحجز المباشر وتسعير ذكي يتكيف مع السوق، ويوفر الوقت والجهد عبر أتمتة المهام اليومية. كما يعزز رضا الضيوف والتقييمات العالية، مما يدعم الحجوزات المتكررة. باختيار الباقة المناسبة، يتحول السكن المفروش إلى استثمار ناجح بجودة عالية وبأقل مجهود إداري.",
             image: "/assets/apartment.jpg",
           },
           {
             title: "Chalets",
             name: "الشاليهات",
-            description:
-              "نظام رشد يُقدم حلاً متكاملاً لإدارة الشاليهات بكل كفاءة، حيث يُسهل عملية إدارة الحجوزات من خلال مزامنتها تلقائياً من مختلف المنصات في مكان واحد، مع تقويم مركزي محدث لحظياً. كما يتيح الحجز المباشر لتجنب عمولات المنصات الخارجية، يتميز النظام بأدوات ذكية لتحسين الإيرادات، مثل التسعير التلقائي حسب الموسم والمنافسة، وإمكانية منح خصومات للحجوزات المتكررة. كما يُوفر مميزات أتمتة المهام اليومية كإرسال تأكيدات الحجز وتنبيهات التنظيف، لتحسين خدمة الضيوف، يتضمن النظام بوابة دفع متعددة الخيارات ونظام تقييمات، مع دعم الأقفال الذكية، ويقدم تقارير أداء دقيقة لمتابعة الإشغال والتحليل المالي، تتنوع خطط الاشتراك لتلائم جميع أحجام الشاليهات، مع إمكانيات تسويقية متكاملة، بذلك يحول النظام إدارة الشاليهات إلى عملية سهلة ومربحة، مع توفير الوقت وخفض التكاليف، عبر واجهة بسيطة لا تحتاج خبرة تقنية.",
+            description: "نظام رشد هو حل متكامل لإدارة الشاليهات بفعالية، حيث يجمع الحجوزات من مختلف المنصات في تقويم موحد ومحدث لحظيًا، ويدعم الحجز المباشر لتقليل العمولات. يتميز بتسعير ذكي وخصومات للحجوزات المتكررة، ويُؤتمت المهام اليومية مثل تأكيدات الحجز وتنبيهات التنظيف. كما يوفّر بوابة دفع متعددة، نظام تقييمات، ودعم للأقفال الذكية، مع تقارير دقيقة للإشغال والتحليل المالي. بفضل واجهته السهلة وخطط الاشتراك المتنوعة، يجعل النظام إدارة الشاليهات أكثر ربحية وبتكلفة وجهد أقل.",
             image: "/assets/chalets.jpg",
           },
           {
             title: "Private units",
             name: "الوحدات الخاصة",
-            description:
-              "نظام رشد يمكّن ملاك الوحدات الخاصة من تحقيق العديد من الفوائد، فهو يساعدهم في إدارة وحدة واحدة أو عدة وحدات بكل سهولة وبدون أي تعقيدات، كما يعمل على زيادة الأرباح من خلال تمكين الحجز المباشر واستخدام أنظمة التسعير الذكية التي تتكيف مع ظروف السوق، ويوفر النظام وقت الملاك عن طريق أتمتة العمليات اليومية الروتينية، مما يقلل من الجهد والوقت المطلوب للإدارة، بالإضافة إلى ذلك، يساهم النظام في تحسين تجربة الضيوف بشكل ملحوظ، مما يضمن الحصول على تقييمات عالية ويشجع على تكرار الحجوزات من قبل العملاء، بفضل استخدام هذا النظام، يصبح بإمكان ملاك الوحدات الخاصة تحويل ممتلكاتهم إلى مصدر دخل مستقر ومربح، مع الحفاظ على بساطة عملية الإدارة التي لا تحتاج سوى لبضع دقائق من المتابعة اليومية.",
+            description: "نظام رشد يساعد ملاك الوحدات الخاصة على إدارة ممتلكاتهم بسهولة دون تعقيدات، سواء كانت وحدة واحدة أو أكثر. يعزز الأرباح عبر الحجز المباشر وتسعير ذكي متكيف مع السوق، ويوفر الوقت من خلال أتمتة المهام اليومية. كما يحسن تجربة الضيوف ويزيد من فرص التقييمات العالية والحجوزات المتكررة. بفضل بساطته، يمكن تحويل الوحدة إلى مصدر دخل مستقر بمجهود إداري بسيط لا يتطلب سوى دقائق يومية.",
             image: "/assets/private_units.jpg",
           },
           {
             title: "halls",
             name: "القاعات",
-            description:
-              "بمنصة رشد، أصحاب القاعات يملكون اليوم أداة ذكية تعزز من أرباحهم وتبسط إدارتهم! من خلال تقارير دقيقة وتحليلات فورية، يمكنهم تتبع الحجوزات ونِسب الإشغال والدخل بكل سهولة، واتخاذ قرارات تساعدهم على تحسين الأداء وزيادة العائد. ومع أدوات مثل التسعير الديناميكي ونظام CRM، يصبح التواصل مع العملاء أكثر احترافية، ما يضمن تجربة مميزة للزوار وولاء طويل الأمد. اختصر الجهد  وارفع دخلك مع رُشْد!هل ترغب بتعديل الفقرة لتناسب إعلانًا مرئيًا أو منشورًا على وسائل التواصل؟",
+            description: "رُشد تقدم لأصحاب القاعات أداة ذكية شاملة لتعزيز الأرباح وتبسيط العمليات. التحليلات الفورية والتقارير التفصيلية تساعد في تتبع الحجوزات ونسب الإشغال والدخل، مما يساهم في اتخاذ قرارات أفضل. ميزات مثل التسعير الديناميكي ونظام إدارة علاقات العملاء (CRM) المتكامل تعزز التواصل مع العملاء وتزيد من ولائهم. توفر الوقت وتزيد الإيرادات، لتجعل الإدارة أسهل وأكثر فاعلية.",
             image: "/assets/hall.jpg",
           },
         ],
@@ -576,20 +553,6 @@ export const RushdContent: IRushdContent = {
       featureTitle: "المزايا:",
       fees: "الرسوم: ",
       plans: [
-        {
-          name: "باقة الانطلاقة",
-          id: "starter",
-          price: "2% من كل حجز",
-          users: "المستخدمين: 1",
-          units: "الوحدات: 1",
-          duration: "مدة الاشتراك: سنة واحدة",
-          clarification: "للمستخدمين الجدد",
-          features: [
-            "الخصائص الأساسية",
-            "دعم محدود",
-            "عند انتهاء السنة، تتحول تلقائياً إلى الباقة الأساسية",
-          ],
-        },
         {
           name: "باقة بلَس",
           id: "plus",
@@ -762,7 +725,7 @@ export const RushdContent: IRushdContent = {
         {
           question: "هل يمكن ربط منصة رشد مع قنوات الحجز مثل Airbnb ؟Bookings",
           answer:
-            "نعم، زشد تتيح لك إدارة الحجوزات من مختلف المنصات العالمية من مكان واحد، مما يوفر عليك الوقت ويقلل نسبة الأخطاء.",
+            "نعم، رشد تتيح لك إدارة الحجوزات من مختلف المنصات العالمية من مكان واحد، مما يوفر عليك الوقت ويقلل نسبة الأخطاء.",
         },
         {
           question: "كيف استقبل الحجوزات من العملاء بشكل مباشر؟",
@@ -879,4 +842,259 @@ export const RushdContent: IRushdContent = {
       privacyPolicy: "الخصوصية",
     },
   },
+};
+
+export const rushdPolicy: IrushdPolicy = {
+  ar: {
+    title: "خصوصيتك تهمنا",
+    close: "إغلاق",
+    description: [
+      "في نظام رشد، نحن ملتزمون بحماية بياناتك الشخصية، وضمان أن تكون الخصوصية حجر الأساس لعملياتنا وممارساتنا. نلتزم أيضًا بالامتثال لجميع أنظمة ولوائح خصوصية البيانات المعمول بها، بما في ذلك نظام حماية البيانات الشخصية في المملكة العربية السعودية.",
+      "ينطبق إشعار الخصوصية الخاص بنا على جميع المنتجات والخدمات التي يقدمها نظام رشد. يوضح هذا الإشعار كيفية جمع بياناتك الشخصية واستخدامها وحمايتها. نحن نجمع البيانات الشخصية بدقة وبناءً على نظام حماية البيانات الشخصية كما هو موضح في هذا الإشعار.",
+      "بموافقتك على هذه الاتفاقية، فإنك توافق على جمع واستخدام بياناتك الشخصية والسلوكية لأغراض تحسين خدماتنا المستقبلية عبر تقنيات التعلم الآلي. ستتم معالجة بياناتك وفقًا لسياسة الخصوصية الخاصة بنا، حيث سيتم تخزينها بأمان واستخدامها فقط لتحسين النماذج وتخصيص تجربتك. يحق لك الوصول إلى بياناتك أو تعديلها أو حذفها في أي وقت.",
+    ],
+    paragraphs: [
+      {
+        title: "1. التعريفات والتفسيرات",
+        content: [
+          "\"الحساب\" يعني عقد الاشتراك بنظام رشد.",
+          "\"الشركة التابعة\" تعني الكيان الذي يتحكم في أو يتحكم فيه أو يخضع لسيطرة مشتركة مع طرف آخر.",
+          "\"النظام\" يشير إلى برنامج رشد المقدم من الشركة المعالجة التي ستعالج بياناتك الشخصية.",
+          "\"البلد\" يشير إلى المملكة العربية السعودية.",
+          "\"البيانات الشخصية\" تشير إلى أي معلومات يمكن أن تحدد هويتك كفرد. يتضمن ذلك اسمك وتفاصيل الاتصال ومعلومات الحساب وأي بيانات أخرى يمكن ربطها بك شخصيًا.",
+          "\"الخدمة\" تشير إلى الخصائص التي يقدمها نظام رشد والمزايا الإضافية المتكاملة مع النظام.",
+          "\"مقدم الخدمة\" يعني أي شخص طبيعي أو اعتباري يقوم بمعالجة البيانات نيابة عن الشركة. يشير إلى شركات أو أفراد تابعين لجهات خارجية توظفهم الشركة لتسهيل الخدمة، أو لتقديم الخدمة نيابة عن الشركة، أو لأداء الخدمات المتعلقة بالخدمة أو لمساعدة الشركة في تحليل كيفية استخدام الخدمة.",
+          "\"بيانات الاستخدام\" تشير إلى البيانات التي يتم جمعها تلقائيًا، إما عن طريق استخدام الخدمة أو من البنية التحتية للخدمة نفسها (على سبيل المثال، مدة زيارة الصفحة).",
+          "\"أنت\" تعني الفرد الذي يصل إلى الخدمة أو يستخدمها، أو الشركة، أو الكيان القانوني الآخر الذي يقوم هذا الفرد بالوصول إلى الخدمة أو استخدامها نيابة عنه، حسب الاقتضاء.",
+        ],
+      },
+      {
+        title: "2. ما هي البيانات الشخصية التي نجمعها؟",
+        description: "قد نجمع الأنواع التالية من البيانات الشخصية الرئيسية عنك:",
+        content: [
+          "بيانات الاتصال: الاسم، رقم الهوية الوطنية، رقم الهاتف المحمول وعنوان البريد الإلكتروني والعنوان الوطني.",
+          "البيانات المالية: تفاصيل الحساب المصرفي ومعلومات بطاقة الدفع وسجل المعاملات.",
+          "البيانات التقنية: عنوان IP ونظام التشغيل ونوع ورقم إصدار المتصفح وملفات تعريف الارتباط (Cookies).",
+          "بيانات الاستخدام: معلومات حول كيفية استخدامك لموقعنا / تطبيقنا ومنتجاتنا وخدماتنا.",
+          "بيانات التسويق والتواصل: التفضيلات في تلقي التسويق منا وتفضيلات الاتصال الخاصة بك. نقوم بتخزين المعلومات الشخصية بطريقة آمنة ومشفرة. لا يتم تخزين بيانات البطاقات الائتمانية في منصة \"رشد\". جميع معلومات البطاقات الائتمانية تعالج بشكل آمن ومشفر ويتم التعامل معها من خلال مزودي خدمات الدفع الإلكتروني الموثوقين.",
+        ],
+      },
+      {
+        title: "3. كيف نجمع بياناتك الشخصية ونستخدمها؟",
+        description: "نجمع بياناتك الشخصية من خلال الطرق التالية:",
+        content: [
+          "التفاعلات المباشرة: يمكنك تقديم بيانات شخصية عن طريق تعبئة نموذج التسجيل أو استبانة تقييم الخدمة.",
+          "التقنيات أو التفاعلات الآلية: أثناء تفاعلك مع موقعنا / تطبيقنا، قد نقوم تلقائيًا بجمع البيانات التقنية حول أجهزتك وإجراءات التصفح وأنماطك.",
+          "تقنيات التعلم الآلي: هي تقنية تستخدم خوارزميات وبرمجيات لتحليل البيانات واستخلاص الأنماط والسلوكيات بهدف تحسين أداء الأنظمة واتخاذ قرارات تلقائية بناءً على تلك البيانات.",
+        ],
+      },
+      {
+        title: "4. لماذا نجمع بياناتك الشخصية؟",
+        description: "تُجمع بياناتك الشخصية للأغراض التالية:",
+        content: [
+          "إنشاء وإدارة حسابات المستخدمين للوصول إلى تطبيقات / موقع الويب الخاص بنا.",
+          "لمعالجة طلبات المستخدمين وتسهيل تفاعلات النظام الأساسي وتقديم تجارب مستخدم مخصصة.",
+          "لتقديم دعم العملاء والرد على الاستفسارات وحل المشكلات المتعلقة بإدارة الحساب.",
+          "لحماية سلامة وأمن تطبيقاتنا ومنع الاحتيال والامتثال للمتطلبات التنظيمية.",
+          "لتحليل بيانات المستخدم للحصول على نتائج تساعد في تحسين تطبيقاتنا وتعزيز تجارب المستخدم وتطوير ميزات جديدة.",
+          "للاقتراح والتوصية لخدمات أو ميزات أو منتجات جديدة والتي قد تهم المستخدمين بناءً على أنماط الاستخدام والتفضيلات الخاصة بهم.",
+          "إرسال رسائل البريد الإلكتروني والرسائل النصية القصيرة وإشعارات الموقع بالإضافة إلى وسائل الاتصال الأخرى لتقديم الخدمات والرد على الاستفسارات و / أو الطلبات أو الأسئلة الأخرى.",
+        ],
+      },
+      {
+        title: "5. قد نشارك معلوماتك الشخصية في الحالات التالية:",
+        content: [
+          "الامتثال القانوني: قد نشارك بياناتك الشخصية للامتثال للأنظمة واللوائح والإجراءات القانونية المعمول بها، ويشمل ذلك الاستجابة لطلبات الجهات الحكومية والأمنية بالمملكة العربية السعودية.",
+          "لنقل الأعمال: في حالة الاندماج أو الاستحواذ أو أي شكل من أشكال بيع بعض أو كل أصولنا، يجوز لنا نقل بياناتك الشخصية إلى الطرف الثالث ذي الصلة بطريقة تضمن حماية بياناتك الشخصية حسب إشعار الخصوصية هذا.",
+          "مع مزودي الخدمة: قد نشارك بياناتك الشخصية مع موفري خدمات موثوقين من جهات خارجية للمساعدة في تشغيل خدماتنا أو إجراء أعمالنا أو خدمة مستخدمينا. يلتزم مقدم الخدمات تعاقديًا بالحفاظ على خصوصية بياناتك وأمانها واستخدامها فقط للأغراض التي كُشِف عنها لهم.",
+          "مع الشركات التابعة: يجوز لنا مشاركة معلوماتك مع الشركات التابعة لنا، وفي هذه الحالة سنطلب من تلك الشركات التابعة احترام سياسة الخصوصية هذه. تشمل الشركات التابعة شركتنا الأم وأي شركات تابعة أخرى أو شركاء في مشاريع مشتركة أو شركات أخرى نتحكم فيها أو تخضع لسيطرة مشتركة معنا.",
+          "مع شركاء الأعمال: يجوز لنا مشاركة معلوماتك مع شركائنا التجاريين لتقديم منتجات أو خدمات أو عروض ترويجية معينة لك.",
+        ],
+      },
+      {
+        title: "6. روابط إلى مواقع الإنترنت الأخرى:",
+        content: [
+          "قد تحتوي خدمتنا على روابط إلى مواقع إنترنت أخرى لا نديرها نحن. إذا قمت بالنقر على رابط من طرف ثالث، فسيتم توجيهك إلى موقع ذلك الطرف الثالث. ننصحك بشدة بمراجعة سياسة الخصوصية لكل موقع تزوره. نحن لا نتحكم في محتوى أو سياسات الخصوصية أو ممارسات أي مواقع أو خدمات طرف ثالث.",
+        ],
+      },
+      {
+        title: "7. مدة الاحتفاظ ببياناتك الشخصية:",
+        content: [
+          "نحتفظ ببياناتك الشخصية فقط طالما هو مطلوب بموجب الأنظمة للغرض المحدد في هذا الإشعار. سنحتفظ بمعلوماتك ونستخدمها بالقدر اللازم للامتثال لالتزاماتنا القانونية (على سبيل المثال، إذا طُلِب منا الاحتفاظ ببياناتك للامتثال للقوانين المعمول بها)، وحل النزاعات، وتطبيق اتفاقياتنا النظامية وسياساتنا التي تخضع لتعليمات من الجهات التنظيمية.",
+          "سنحتفظ أيضًا ببيانات الاستخدام لأغراض التحليل الداخلي. يتم الاحتفاظ ببيانات الاستخدام بشكل عام لفترة زمنية أقصر، باستثناء الحالات التي تُستخدم فيها هذه البيانات لتعزيز الأمان أو لتحسين وظائف خدمتنا، أو عندما نكون ملزمين قانونًا بالاحتفاظ بهذه البيانات لفترات زمنية أطول.",
+        ],
+      },
+      {
+        title: "8. حقوقك فيما يتعلق بمعالجة بياناتك الشخصية.",
+        description: "لديك الحقوق التالية فيما يتعلق ببياناتك الشخصية:",
+        content: [
+          "حق الوصول إلى بياناتك الشخصية: طلب الوصول إلى البيانات الشخصية التي نحتفظ بها عنك.",
+          "حق طلب الحصول على بياناتك الشخصية: يحق لك طلب الحصول على بياناتك الشخصية المحتفظ بها في \"نزيل\" بصيغة مقروءة وواضحة، إذا كان ذلك ممكنًا تقنيًا من خلال القناة التي تطلبها.",
+          "حق طلب تصحيح بياناتك الشخصية: طلب تصحيح أي بيانات غير دقيقة أو غير كاملة.",
+          "حق طلب إتلاف بياناتك الشخصية: طلب حذف بياناتك تحت ظروف معينة.",
+          "حق سحب موافقتك: يحق لك سحب موافقتك على معالجة بياناتك الشخصية في أي وقت ما لم تكن هناك مسوغات نظامية تتطلب عكس ذلك.",
+        ],
+      },
+      {
+        title: "9. حذف أو إتلاف بياناتك الشخصية:",
+        content: [
+          "لديك الحق في حذف أو طلب المساعدة في حذف البيانات الشخصية التي جمعناها عنك.",
+          "قد تمنحك خدمتنا القدرة على حذف معلومات معينة عنك من داخل الخدمة.",
+          "يمكنك تحديث معلوماتك أو تعديلها أو حذفها في أي وقت عن طريق تسجيل الدخول إلى حسابك، إذا كان لديك حساب، وزيارة قسم إعدادات الحساب الذي يسمح لك بإدارة معلوماتك الشخصية. يمكنك أيضًا الاتصال بنا لطلب الوصول إلى أي معلومات شخصية قدمتها لنا أو تصحيحها أو حذفها. ومع ذلك، يرجى ملاحظة أننا قد نحتاج إلى الاحتفاظ بمعلومات معينة عندما يكون لدينا التزام قانوني أو أساس قانوني للقيام بذلك.",
+        ],
+      },
+      {
+        title: "10. طريقة ممارسة الحقوق:",
+        content: [
+          "لممارسة حقوقك، يمكنك التواصل معنا عبر وسائل التواصل المذكورة في المادة 13 من هذه الاتفاقية.",
+        ],
+      },
+      {
+        title: "11. تحديثات إشعار الخصوصية:",
+        content: [
+          "يحتفظ نظام رشد بالحق في تغيير إشعار الخصوصية هذا من وقت لآخر. تسري التغييرات والتعديلات على إشعار الخصوصية هذا فور نشر التغييرات والتعديلات على هذا الموقع. يُنصح المستخدمون بمراجعة هذا الإشعار دوريًا ليكونوا على دراية كاملة بأي تغييرات.",
+        ],
+      },
+      {
+        title: "12. الموافقة على سياسة الخصوصية:",
+        content: [
+          "من خلال الوصول إلى هذا الموقع واستمرار استخدامك، يعني موافقتك على شروط وأحكام إشعار الخصوصية.",
+        ],
+      },
+      {
+        title: "13. معلومات التواصل:",
+        content: [
+          "في حال وجود أي استفسار حول سياسة الخصوصية هذه، يمكنكم التواصل معنا عبر التالي:",
+          "رقم الهاتف: 0534336584",
+          "البريد الإلكتروني: Info@rushd.tech",
+        ],
+      },
+    ],
+  },
+  en: {
+    title: "Your Privacy Matters to Us",
+    close: "Close",
+    description: [
+      "At Rushd System, we are committed to protecting your personal data and ensuring that privacy is the cornerstone of our operations and practices. We are also committed to complying with all applicable data privacy regulations and laws, including the Personal Data Protection Law in the Kingdom of Saudi Arabia.",
+      "Our privacy notice applies to all products and services offered by Rushd System. This notice explains how your personal data is collected, used, and protected. We collect personal data accurately and based on the Personal Data Protection Law as outlined in this notice.",
+      "By agreeing to this agreement, you consent to the collection and use of your personal and behavioral data for the purposes of improving our future services through machine learning technologies. Your data will be processed in accordance with our privacy policy, where it will be securely stored and used only to improve models and personalize your experience. You have the right to access, modify, or delete your data at any time."
+    ],
+    paragraphs: [
+      {
+        title: "1. Definitions and Interpretations",
+        content: [
+          "\"Account\" means the subscription contract with Rushd System.",
+          "\"Affiliate\" means an entity that controls, is controlled by, or is under common control with a party.",
+          "\"System\" refers to the Rushd software provided by the Processing Company that will process your personal data.",
+          "\"Country\" refers to the Kingdom of Saudi Arabia.",
+          "\"Personal Data\" refers to any information that can identify you as an individual. This includes your name, contact details, account information, and any other data that can be linked to you personally.",
+          "\"Service\" refers to the features offered by Rushd System and the additional benefits integrated with the system.",
+          "\"Service Provider\" means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.",
+          "\"Usage Data\" refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).",
+          "\"You\" means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable."
+        ]
+      },
+      {
+        title: "2. What Personal Data Do We Collect?",
+        description: "We may collect the following main types of personal data about you:",
+        content: [
+          "Contact Data: Name, National ID number, mobile phone number, email address, and national address.",
+          "Financial Data: Bank account details, payment card information, and transaction history.",
+          "Technical Data: IP address, operating system, browser type and version number, and cookies.",
+          "Usage Data: Information about how you use our website/application and our products and services.",
+          "Marketing and Communications Data: Preferences in receiving marketing from us and your communication preferences. We store personal information securely and encrypted. Credit card data is not stored on the \"Rushd\" platform. All credit card information is securely processed and encrypted and handled through trusted electronic payment service providers."
+        ]
+      },
+      {
+        title: "3. How Do We Collect and Use Your Personal Data?",
+        description: "We collect your personal data through the following methods:",
+        content: [
+          "Direct Interactions: You may provide personal data by filling in a registration form or a service evaluation questionnaire.",
+          "Automated Technologies or Interactions: As you interact with our website/application, we may automatically collect technical data about your equipment, browsing actions, and patterns.",
+          "Machine Learning Technologies: This is a technology that uses algorithms and software to analyze data and extract patterns and behaviors with the aim of improving the performance of systems and making automatic decisions based on that data."
+        ]
+      },
+      {
+        title: "4. Why Do We Collect Your Personal Data?",
+        description: "Your personal data is collected for the following purposes:",
+        content: [
+          "To create and manage user accounts for accessing our applications/website.",
+          "To process user requests, facilitate platform interactions, and provide personalized user experiences.",
+          "To provide customer support, respond to inquiries, and resolve account management issues.",
+          "To protect the integrity and security of our applications, prevent fraud, and comply with regulatory requirements.",
+          "To analyze user data to gain insights that help improve our applications, enhance user experiences, and develop new features.",
+          "To suggest and recommend new services, features, or products that may interest users based on their usage patterns and preferences.",
+          "To send emails, SMS messages, and website notifications, as well as other means of communication, to provide services, respond to inquiries, and/or other requests or questions."
+        ]
+      },
+      {
+        title: "5. We May Share Your Personal Information in the Following Cases:",
+        content: [
+          "Legal Compliance: We may share your personal data to comply with applicable regulations, laws, and legal procedures, including responding to requests from governmental and security authorities in the Kingdom of Saudi Arabia.",
+          "For Business Transfers: In the event of a merger, acquisition, or any form of sale of some or all of our assets, we may transfer your personal data to the relevant third party in a manner that ensures the protection of your personal data in accordance with this Privacy Notice.",
+          "With Service Providers: We may share your personal data with trusted third-party service providers to help us operate our services, conduct our business, or serve our users. Service providers are contractually obligated to maintain the confidentiality and security of your data and use it only for the purposes disclosed to them.",
+          "With Affiliates: We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include our parent company and any other subsidiaries, joint venture partners or other companies that we control or that are under common control with us.",
+          "With Business Partners: We may share your information with our business partners to offer you certain products, services or promotions."
+        ]
+      },
+      {
+        title: "6. Links to Other Websites:",
+        content: [
+          "Our Service may contain links to other websites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services."
+        ]
+      },
+      {
+        title: "7. Retention Period of Your Personal Data:",
+        "content": [
+          "We will only retain your personal data for as long as is required by regulations for the specific purpose stated in this notice. We will retain and use your information to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies, subject to instructions from regulatory authorities.",
+          "We will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods."
+        ]
+      },
+      {
+        title: "8. Your Rights Regarding the Processing of Your Personal Data:",
+        description: "You have the following rights regarding your personal data:",
+        content: [
+          "The right to access your personal data: Request access to the personal data we hold about you.",
+          "The right to request to obtain your personal data: You have the right to request to obtain your personal data held in a \"guest\" in a readable and clear format, if technically possible through the channel you request.",
+          "The right to request the correction of your personal data: Request the correction of any inaccurate or incomplete data.",
+          "The right to request the destruction of your personal data: Request the deletion of your data under certain circumstances.",
+          "The right to withdraw your consent: You have the right to withdraw your consent to the processing of your personal data at any time unless there are regulatory justifications requiring otherwise."
+        ]
+      },
+      {
+        title: "9. Deletion or Destruction of Your Personal Data:",
+        content: [
+          "You have the right to delete or request assistance in deleting the personal data that we have collected about you.",
+          "Our Service may give you the ability to delete certain information about you from within the Service.",
+          "You can update, amend, or delete your information at any time by signing in to your Account, if you have one, and visiting the account settings section that allows you to manage your personal information. You may also contact us to request access to, correct, or delete any personal information that you have provided to us. However, please note that we may need to retain certain information when we have a legal obligation or lawful basis to do so."
+        ]
+      },
+      {
+        title: "10. How to Exercise Rights:",
+        content: [
+          "To exercise your rights, you can contact us via the contact methods mentioned in Article 13 of this Agreement."
+        ]
+      },
+      {
+        title: "11. Updates to the Privacy Notice:",
+        content: [
+          "Rushd System reserves the right to change this Privacy Notice from time to time. Changes and amendments to this Privacy Notice are effective immediately upon posting the changes and amendments on this website. Users are advised to review this notice periodically to be fully aware of any changes."
+        ]
+      },
+      {
+        title: "12. Consent to the Privacy Policy:",
+        content: [
+          "By accessing this website and continuing to use it, you signify your acceptance of the terms and conditions of the Privacy Notice."
+        ]
+      },
+      {
+        title: "13. Contact Information:",
+        content: [
+          "In case of any inquiries regarding this Privacy Policy, you can contact us via the following:",
+          "Phone Number: 0534336584",
+          "Email: Info@rushd.tech"
+        ]
+      }
+    ]
+  }
 };

@@ -56,6 +56,29 @@ export interface FormData {
   message: string;
 };
 
+export interface IrushdPolicy {
+  ar: {
+    title: string;
+    description: string[];
+    paragraphs: {
+      title: string;
+      description?: string;
+      content: string[]
+    }[];
+    close: string;
+    },
+  en: {
+    title: string;
+    description: string[];
+    paragraphs: {
+      title: string;
+      description?: string;
+      content: string[]
+    }[];
+    close: string;
+  },
+}
+
 // ########################### rushd data interface ###############################
 
 interface RushdContentLanguage {

@@ -49,7 +49,7 @@ function App() {
           <Hero />
         </section>
 
-        <section className="scroll-mt-20 sm:scroll-mt-29">
+        <section className="scroll-mt-20 sm:scroll-mt-24">
           <Features />
         </section>
 
@@ -57,11 +57,11 @@ function App() {
           <WhoCanUseRushd />
         </section>
 
-        <section id="pricing" className="scroll-mt-20 sm:scroll-mt-29">
+        <section id="pricing" className="scroll-mt-20 sm:scroll-mt-24">
           <Pricing />
         </section>
 
-        <section id="quotes" className="scroll-mt-28 sm:scroll-mt-37">
+        <section id="quotes" className="scroll-mt-20 sm:scroll-mt-24">
           <Quotes />
         </section>
 
@@ -71,7 +71,7 @@ function App() {
           <FAQ />
         </section>
 
-        <section id="contact" className=" scroll-mt-20 sm:scroll-mt-29">
+        <section id="contact" className=" scroll-mt-20 sm:scroll-mt-24">
           <Contact />
         </section>
 

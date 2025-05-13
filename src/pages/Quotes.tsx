@@ -42,9 +42,9 @@ const Quotes = () => {
     };
 
     return (
-        <div data-aos="fade-up" className="w-full h-fit">
+        <div data-aos="fade-up" className="w-full h-fit pt-10">
             {/* Title Section */}
-            <div className="my-8 padding-x">
+            <div className="mb-8 padding-x">
                 <Title theTitle={currentLanguage.quotesData.sectionTitle} titleStyle="text-3xl sm:text-5xl" />
             </div>
 

@@ -42,7 +42,7 @@ const Partners = () => {
     };
 
     return (
-        <div data-aos="fade-up" className="w-full h-fit">
+        <div data-aos="fade-left" className="w-full h-fit">
             {/* Title Section */}
             <div className="padding-x my-10">
                 <Title theTitle={currentLanguage.partnersData.sectionTitle} titleStyle="text-3xl sm:text-5xl" />

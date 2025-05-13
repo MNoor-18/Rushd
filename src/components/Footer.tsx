@@ -2,15 +2,20 @@ import useLanguage from "../utils/utils";
 import { BiSend } from "react-icons/bi";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { rushdPolicy } from "../translation/translation";
 
 const Footer = () => {
   const currentLanguage = useLanguage();
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const [showPolicy, setShowPolicy] = useState(false);
+
   const [isloading, setIsLoading] = useState(false);
 
   const selectedLang = localStorage.getItem("currentLanguage") || "ar";
+
+  const policyContent = selectedLang === "ar" ? rushdPolicy.ar : rushdPolicy.en;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -58,8 +63,54 @@ const Footer = () => {
 
   return (
     <footer className="w-full bg-primary padding-x py-12">
+
+      {/* SHOW POLICY */}
+      {showPolicy && (
+      <div
+        className="w-screen h-screen fixed inset-0 z-[100]"
+      >
+        <div className="w-full h-full flex flex-col padding-x bg-white">
+          <div className="relative order-last lg:order-first py-2 lg:py-5 left-0 flex justify-center">
+            <button
+              onClick={() => setShowPolicy(false)}
+              className="bg-black hover:bg-gray-800 cursor-pointer px-8 py-2 rounded-md md:px-4 md:py-2 text-white font-bold sm:text-xl"
+            >
+              {policyContent.close}
+            </button>
+          </div>
+
+          <div className="overflow-y-scroll py-10 ">
+            {/* Policy Content */}
+            <h1 className="font-semibold">{policyContent.title}</h1>
+            {policyContent.description.map((desc) => (
+              <p key={desc} className="text-sm text-gray-700 mt-2">
+                {desc}
+              </p>
+            ))}
+
+            {policyContent.paragraphs.map((para) => (
+              <div key={para.title} className="mt-4">
+                <h2 className="text-lg font-semibold">{para.title}</h2>
+                {para.description && (
+                  <p className="text-sm text-gray-700 mt-2">{para.description}</p>
+                )}
+                <ul className="px-2">
+                  {para.content.map((content) => (
+                    <li key={content} className="text-sm list-disc text-gray-700 mt-2">
+                      {content}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
+          </div>
+        </div>
+      </div>
+    )}
+
       <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap md:flex-nowrap xl:flex-nowrap sm:justify-between ">
-        {/* FOOTER RIGHT SECTION */}
+        {/* FOOTER LOGO SECTION */}
         <div className="w-fit flex flex-col items-center sm:items-start">
           <div className="w-36 h-14">
             <img src="./assets/white-logo.png" alt="Logo" />
@@ -135,10 +186,11 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-4 text-white text-sm">
-            <p className="cursor-pointer hover:underline">
+            <p onClick={() => setShowPolicy(!showPolicy)} className="cursor-pointer hover:underline">
               {currentLanguage.legalDocuments.termsAndConditions}
             </p>
-            <p className="cursor-pointer hover:underline">
+
+            <p onClick={() => setShowPolicy(!showPolicy)} className="cursor-pointer hover:underline">
               {currentLanguage.legalDocuments.privacyPolicy}
             </p>
           </div>
