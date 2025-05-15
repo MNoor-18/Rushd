@@ -1,52 +1,51 @@
 export interface CustomButtonProps {
-    label: string;
-    theStyle: string;
-    textColor?: string;
-    children?: React.ReactNode;
-    event: () => void
+  label: string;
+  theStyle: string;
+  textColor?: string;
+  children?: React.ReactNode;
+  event: () => void;
 }
 
 export interface TitlesProps {
-    theTitle: string;
-    titleStyle: string;
-    children?: React.ReactNode;
+  theTitle: string;
+  titleStyle: string;
+  children?: React.ReactNode;
 }
 
 export interface ProblemCardProps {
-    number: number | string;
-    bgColor: string;
-    textColor: string;
-    title: string;
-    theExplanation: string;
-    numStyle: string;
+  number: number | string;
+  bgColor: string;
+  textColor: string;
+  title: string;
+  theExplanation: string;
+  numStyle: string;
 }
 
 export interface SolutionsCardProps {
-    theTitle: string;
-    description: string;
+  theTitle: string;
+  description: string;
 }
 
 export interface PlanCardProps {
-    name: string;
-    price: string;
-    duration: string | undefined;
-    isActive: boolean;
-    onSelect: () => void;
+  name: string;
+  price: string;
+  isActive: boolean;
+  onSelect: () => void;
 }
 
 export interface FeedbackCardProps {
-    name: string;
-    rating: number;
-    comment: string;
-    active?: boolean
-    imageUrl?: string;
+  name: string;
+  rating: number;
+  comment: string;
+  active?: boolean;
+  imageUrl?: string;
 }
 
 export interface SliderButtonsProps {
-    onPrev: () => void;
-    onNext: () => void;
-    atStart?: boolean;
-    atEnd?: boolean;
+  onPrev: () => void;
+  onNext: () => void;
+  atStart?: boolean;
+  atEnd?: boolean;
 }
 
 export interface FormData {
@@ -54,7 +53,7 @@ export interface FormData {
   surname: string;
   email: string;
   message: string;
-};
+}
 
 export interface IrushdPolicy {
   ar: {
@@ -63,20 +62,20 @@ export interface IrushdPolicy {
     paragraphs: {
       title: string;
       description?: string;
-      content: string[]
+      content: string[];
     }[];
     close: string;
-    },
+  };
   en: {
     title: string;
     description: string[];
     paragraphs: {
       title: string;
       description?: string;
-      content: string[]
+      content: string[];
     }[];
     close: string;
-  },
+  };
 }
 
 // ########################### rushd data interface ###############################
@@ -98,21 +97,21 @@ interface RushdContentLanguage {
         bgColor: string;
         textColor: string;
         numStyle: string;
-      }[]
+      }[];
     };
     solutions: {
       title: string;
       content: {
         id: number;
         title: string;
-        description: string
+        description: string;
       }[];
     };
     whoCanUseRushd: {
       title: string;
       description: string;
       categories: {
-        name: string
+        name: string;
         title: string;
         description: string;
         image: string;
@@ -128,18 +127,18 @@ interface RushdContentLanguage {
       clarification: string;
       id: string;
       price: {
-        monthly: string,
-        annual?: string
+        monthly: string;
+        annual?: string;
       };
       users: string;
       units: string;
       features: string[];
       optionalExtras?: {
-          title: string;
-          extras: string[]
-      }
-  }[];
-  theButton: { label: string };
+        title: string;
+        extras: string[];
+      };
+    }[];
+    theButton: { label: string };
   };
   quotesData: {
     sectionTitle: string;
@@ -180,7 +179,7 @@ interface RushdContentLanguage {
       surName: string;
       email: string;
       message: string;
-    },
+    };
     theName: string;
     surName: string;
     email: string;
@@ -188,14 +187,14 @@ interface RushdContentLanguage {
     submit: string;
     send: string;
     subscribe: string;
-  },
+  };
   legalDocuments: {
     termsAndConditions: string;
     privacyPolicy: string;
-  },
-};
+  };
+}
 
 export interface IRushdContent {
-    en: RushdContentLanguage;
-    ar: RushdContentLanguage;
-  };
+  en: RushdContentLanguage;
+  ar: RushdContentLanguage;
+}

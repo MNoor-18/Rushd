@@ -8,7 +8,7 @@ const useLanguage = () => {
     return window.navigator.language.startsWith("ar") ? "ar" : "en";
   };
 
-  const [langCode, setLangCode] = useState(getInitialLanguage());
+  const langCode = getInitialLanguage();
   const [currentLanguage, setCurrentLanguage] = useState(
     getInitialLanguage() === "ar" ? RushdContent.ar : RushdContent.en
   );

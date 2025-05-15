@@ -25,18 +25,22 @@ const Pricing = () => {
       </Helmet>
 
       <div className="w-full padding-x py-10 ">
-        <Title theTitle={pricingData.title} titleStyle="text-3xl sm:text-4xl lg:text-5xl text-primary">
+        <Title
+          theTitle={pricingData.title}
+          titleStyle="text-3xl sm:text-4xl lg:text-5xl text-primary"
+        >
           <p className="text-lg sm:text-2xl font-bold">
             {pricingData.description}
           </p>
         </Title>
 
         <div className="w-full min-h-full py-10 flex flex-col items-center gap-8 xl:flex-row lg:justify-between 3xl:justify-center 3xl:gap-20">
-
           {/*############## ABOUT PLAN ##############*/}
-          <div data-aos="zoom-out" className="w-full sm:w-125 lg:w-full xl:w-[500px] h-full">
+          <div
+            data-aos="zoom-out"
+            className="w-full sm:w-125 lg:w-full xl:w-[500px] h-full"
+          >
             <div className="w-full h-full rounded-md bg-[#F6E7C6] py-6 px-4 sm:py-10 sm:px-10 flex flex-col gap-4 sm:gap-5 text-sm sm:text-lg font-semibold">
-
               <div className="border-b-[1px]">
                 <h4 className="text-lg sm:text-2xl">{aboutPlan?.name}</h4>
                 <h5 className="text-sm md:text-lg ">
@@ -46,12 +50,16 @@ const Pricing = () => {
 
               <div>
                 <div className="text-xs sm:text-sm flex flex-col gap-2 md:gap-5 lg:flex-row lg:justify-between xl:flex-col xl:justify-start">
-                  <div>
-                    <p>{aboutPlan.price.monthly && aboutPlan.price.monthly}</p>
-                    <p>{aboutPlan.price.annual && aboutPlan.price.annual}</p>
-                    <p>{aboutPlan.users && aboutPlan.users}</p>
-                    <p>{aboutPlan.units && aboutPlan.units}</p>
-                  </div>
+                  {aboutPlan && (
+                    <div>
+                      <p>
+                        {aboutPlan.price.monthly && aboutPlan.price.monthly}
+                      </p>
+                      <p>{aboutPlan.price.annual && aboutPlan.price.annual}</p>
+                      <p>{aboutPlan.users && aboutPlan.users}</p>
+                      <p>{aboutPlan.units && aboutPlan.units}</p>
+                    </div>
+                  )}
 
                   <div>
                     <h5 className="text-sm md:text-xl">
@@ -63,7 +71,6 @@ const Pricing = () => {
                       ))}
                     </ul>
                   </div>
-
                 </div>
 
                 {aboutPlan?.optionalExtras &&
