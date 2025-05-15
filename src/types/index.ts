@@ -85,8 +85,7 @@ interface RushdContentLanguage {
   navbarLinks: { title: string; id: string }[];
   heroData: {
     title: string;
-    subtitle1: string;
-    subtitle2: string;
+    subtitle: string;
     buttonText: string;
   };
   featuresData: {
@@ -124,16 +123,16 @@ interface RushdContentLanguage {
     title: string;
     description: string;
     featureTitle: string;
-    fees: string;
     plans: {
       name: string;
+      clarification: string;
       id: string;
-      price: string;
+      price: {
+        monthly: string,
+        annual?: string
+      };
       users: string;
       units: string;
-      clarification?: string;
-      monthlyMinimum?: string;
-      duration?: string;
       features: string[];
       optionalExtras?: {
           title: string;
@@ -200,6 +199,3 @@ export interface IRushdContent {
     en: RushdContentLanguage;
     ar: RushdContentLanguage;
   };
-
-
-

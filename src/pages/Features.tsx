@@ -15,7 +15,7 @@ const Features = () => {
 
       <Title
         theTitle={currentLanguage.featuresData.problemsNowadays.title}
-        titleStyle="text-2xl sm:text-3xl md:text-5xl max-w-full md:max-w-[250px]"
+        titleStyle="text-3xl sm:text-4xl lg:text-5xl text-primary"
       />
 
       <div className="w-full min-h-[470px] mt-6 flex flex-wrap gap-6 items-center justify-center md:justify-between">

@@ -5,12 +5,11 @@ const SolutionsCard = ({ theTitle, description }: SolutionsCardProps) => {
   const selectedLang = localStorage.getItem("currentLanguage") || "ar";
 
   return (
-    <div data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"} className="w-full h-fit min-h-18 bg-tertiary border-[1px] rounded-xl flex flex-wrap items-center p-4 gap-4">
-      <div className="w-[30px] h-[30px] flex items-center justify-center rounded-full bg-secondary">
+    <div data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"} className="w-full h-fit min-h-18 bg-tertiary border-[1px] rounded-xl flex flex-wrap lg:flex-nowrap items-center p-4 gap-4">
+      <div className="w-7 h-7 xl:w-[30px] xl:h-[30px] flex items-center justify-center rounded-full bg-secondary">
         <img
           src="/assets/check-small.png"
-          width="20px"
-          height="20px"
+          className="w-4 h-4 xl:w-5 xl:h-5"
           alt="check"
         />
       </div>

@@ -2,34 +2,29 @@ import { PlanCardProps } from "../types";
 
 const PlanCard = ({ name, price, isActive, onSelect }: PlanCardProps) => {
   return (
-    <div data-aos="zoom-in" className="w-full h-fit ">
+    <div data-aos="zoom-in" className="w-full">
       <button
         onClick={onSelect}
-        className={`w-full xl:w-125 p-3 flex items-center justify-between xl:p-6 rounded-xl shadow-gray-400 shadow-md transition-all 
+        className={`w-full sm:w-md xl:w-125 px-4 py-3 flex items-center justify-between lg:px-6 lg:py-5 rounded-md lg:rounded-xl shadow-gray-300 shadow-md transition-all 
           duration-300 ${isActive ? "bg-black text-white" : "bg-[#FBF4E2] text-black"}
         `}
       >
         <div className="w-full flex items-center justify-between *:w-fit">
-          <h3 className="text-start px-2 text-sm sm:text-sm  xl:text-xl lg:text-2xl font-bold">
+          <h3 className="text-start text-sm md:text-base lg:text-xl xl:2xl font-bold">
             {name}
           </h3>
 
-          {price !== "Deal" && (
-            <span className="text-xs xl:text-xl lg:text-2xl font-bold">{price}</span>
-          )}
-
-          {price === "Deal" && (
-            <span className="text-lg xl:text-2xl lg:text-5xl font-bold">{price}</span>
-          )}
+          <span className="text-xs md:text-sm lg:text-base xl:text-xl font-semibold xl:font-bold">
+            {price}
+          </span>
         </div>
 
-        <div className="flex items-center">
-          <div
-            className={`w-6 h-6 mx-5 sm:w-8 sm:h-8 rounded-full border-2 ${
-              isActive ? "bg-orange-500 border-orange-500" : "border-gray-400"
-            }`}
-          />
-        </div>
+        <div className="h-3 w-4 xl:w-6" />
+        <div
+          className={`w-5 h-5 md:w-6 md:h-6 sm:w-8 sm:h-8 rounded-full border-2 ${
+            isActive ? "bg-orange-500 border-orange-500" : "border-gray-400"
+          }`}
+        />
       </button>
     </div>
   );

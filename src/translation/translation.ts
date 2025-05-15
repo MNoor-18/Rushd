@@ -11,9 +11,8 @@ export const RushdContent: IRushdContent = {
     ],
 
     heroData: {
-      title: "Rushd – Short-Term Rental Management System",
-      subtitle1: "A smart platform that simplifies operations",
-      subtitle2: " and unifies your property management",
+      title: "Let your property manage itself… with Rushd. Easy management. Faster profits.",
+      subtitle: "List, rent, track – all in simple steps, from one place.",
       buttonText: "Get Started",
     },
 
@@ -125,18 +124,18 @@ export const RushdContent: IRushdContent = {
     pricingData: {
       title: "Subscription Plans",
       description:
-        "We offer four flexible plans tailored to your business size and operational needs, with optional add-ons for scalability:",
+        "We offer three flexible plans tailored to your business size and operational needs, with optional add-ons for scalability:",
       featureTitle: "Features:",
-      fees: "Fees: ",
       plans: [
         {
-          name: "Plus Plan",
-          id: "plus",
-          price: "SAR 89/month (annual discount available)",
+          name: "basic plan",
+          id: "basic",
+          price: {
+            monthly: "81SAR /Monthly",
+            annual: "Annual subscription with a month discount: 890SAR"
+          },
           users: "Users: 1-4",
           units: "Units: Up to 8",
-          duration:
-            "Subscription Duration: One month (with annual discount available)",
           clarification: "Designed for small to medium companies",
           features: [
             "Booking management",
@@ -150,11 +149,12 @@ export const RushdContent: IRushdContent = {
         {
           name: "Advanced Plan",
           id: "advanced",
-          price: "5% per booking",
-          monthlyMinimum: "SAR 1000/month (with annual discount)",
+          price: {
+            monthly: "90SAR /Monthly",
+            annual: "Annual subscription with a month discount: 1000SAR"
+          },
           users: "Users: Unlimited",
           units: "Units: 8+",
-          duration: "Subscription Duration: One month (minimum)",
           clarification: "Designed for medium-sized companies",
           features: [
             "All Plus plan features",
@@ -166,26 +166,28 @@ export const RushdContent: IRushdContent = {
         {
           name: "Enterprise Plan",
           id: "enterprise",
-          price: "5% per booking",
+          price: {
+            monthly: "By agremeent",
+            annual: "Subscription: By agremeent"
+          },
           clarification: "designed for large organizations",
           users: "Users: Unlimited",
           units: "Units: Unlimited",
-          duration: "Subscription Duration: Based on agreement",
           features: [
             "Full customization based on your needs",
             "System integration",
             "24/7 continuous support",
           ],
-          optionalExtras: {
-            title: "Optional Add-Ons:",
-            extras: [
-              "Extra unit (yearly): SAR 50",
-              "Dynamic pricing (per unit/month): SAR 25",
-              "Smart locks (per lock/month): SAR 15",
-              "One-time system setup: SAR 299",
-              "One-time report setup: SAR 199",
-            ],
-          },
+          // optionalExtras: {
+          //   title: "Optional Add-Ons:",
+          //   extras: [
+          //     "Extra unit (yearly): SAR 50",
+          //     "Dynamic pricing (per unit/month): SAR 25",
+          //     "Smart locks (per lock/month): SAR 15",
+          //     "One-time system setup: SAR 299",
+          //     "One-time report setup: SAR 199",
+          //   ],
+          // },
         },
       ],
       theButton: { label: "Free trial" },
@@ -307,7 +309,7 @@ export const RushdContent: IRushdContent = {
       questions: [
         {
           question:
-            "Can Rushd platform be integrated with booking channels like Airbnb ?Bookings",
+            "Can Rushd platform be integrated with booking channels like Airbnb?",
           answer:
             "Yes, Rushd allows you to manage bookings from various global platforms in one place, saving you time and reducing errors.",
         },
@@ -444,9 +446,8 @@ export const RushdContent: IRushdContent = {
       { title: "اتصل بنا", id: "contact" },
     ],
     heroData: {
-      title: "رشـد – نظام إدارة الإيجارات القصيرة",
-      subtitle1: "منصة ذكية تسهل العمليات",
-      subtitle2: "وتوحد إدارة عقاراتك",
+      title: "خلّ إدارة عقارك تشتغل لحالها… مع رشد، إدارة سهلة. أرباح أسرع",
+      subtitle: "سوّق، أجّر، تابع… كلّها بخطوات بسيطة ومكان واحد.",
       buttonText: "ابدأ الآن",
     },
     featuresData: {
@@ -511,7 +512,7 @@ export const RushdContent: IRushdContent = {
       },
       whoCanUseRushd: {
         title: "من يمكنه استخدام رشـد؟",
-        description: "رُشد مناسبة لأي جهة تقدم خدمات الإيواء السياحي",
+        description: "رشد مناسبة لأي جهة تقدم خدمات الإيواء السياحي",
         categories: [
           {
             title: "Hotels",
@@ -549,18 +550,19 @@ export const RushdContent: IRushdContent = {
     pricingData: {
       title: "خطط الاشتراك",
       description:
-        "نقدّم لك أربعة باقات مصممة لتناسب احتياجك مهما كان حجم عملك، مع مزايا مرنة وإضافات اختيارية:",
+        "نقدّم لك ثلاث باقات مصممة لتناسب احتياجك مهما كان حجم عملك، مع مزايا مرنة وإضافات اختيارية:",
       featureTitle: "المزايا:",
-      fees: "الرسوم: ",
       plans: [
         {
-          name: "باقة بلَس",
-          id: "plus",
-          price: "89 ريال شهرياً (خصم سنوي متاح)",
+          name: "الباقة الأساسية",
+          clarification: "مخصصة للشركات الصغيرة والمتوسطة",
+          id: "basic",
+          price: {
+            monthly: "81 ريال شهريا",
+            annual: "الإشتراك السنوي مع خصم شهري: 890"
+          },
           users: "المستخدمين: 1-4",
           units: "الوحدات: حتى 8",
-          duration: "مدة الاشتراك: شهر واحد (مع خصم سنوي متاح)",
-          clarification: "مخصصة للشركات الصغيرة والمتوسطة",
           features: [
             "إدارة الحجوزات",
             "إدارة العقود",
@@ -572,13 +574,14 @@ export const RushdContent: IRushdContent = {
         },
         {
           name: "باقة المتقدمة",
+          clarification: "مخصصة للشركات المتوسطة",
           id: "advanced",
-          price: "5% من كل حجز",
-          monthlyMinimum: "1000 ريال شهرياً (مع خصم سنوي متاح)",
+          price: {
+            monthly: "90 ريال شهريا",
+            annual: "الإشتراك السنوي مع خصم شهري: 1000"
+          },
           users: "المستخدمين: غير محدود",
           units: "الوحدات: 8+",
-          duration: "مدة الاشتراك: شهر واحد (بحد أدنى)",
-          clarification: "مخصصة للشركات المتوسطة",
           features: [
             "جميع خصائص باقة بلس",
             "دومين خاص",
@@ -588,27 +591,29 @@ export const RushdContent: IRushdContent = {
         },
         {
           name: "باقة المؤسسات",
-          id: "enterprise",
-          price: "5% من كل حجز",
           clarification: "مخصصة للشركات الكبرى",
+          id: "enterprise",
+          price: {
+            monthly: "بالإتفاق",
+            annual: "الإشتراك: بالإتفاق"
+          },
           users: "المستخدمين: غير محدود",
           units: "الوحدات: غير محدود",
-          duration: "مدة الاشتراك: حسب الاتفاق",
           features: [
             "تخصيص كامل حسب الحاجة",
             "تكامل مع أنظمة أخرى",
             "دعم متواصل 24/7",
           ],
-          optionalExtras: {
-            title: "إضافات اختيارية:",
-            extras: [
-              "وحدة إضافية (سنوياً): 50 ريال",
-              "تسعير ديناميكي (شهرياً لكل وحدة): 25 ريال",
-              "الأقفال الذكية (شهرياً لكل قفل): 15 ريال",
-              "إعداد النظام (مرة واحدة): 299 ريال",
-              "إعداد التقارير (مرة واحدة): 199 ريال",
-            ],
-          },
+          // optionalExtras: {
+          //   title: "إضافات اختيارية:",
+          //   extras: [
+          //     "وحدة إضافية (سنوياً): 50 ريال",
+          //     "تسعير ديناميكي (شهرياً لكل وحدة): 25 ريال",
+          //     "الأقفال الذكية (شهرياً لكل قفل): 15 ريال",
+          //     "إعداد النظام (مرة واحدة): 299 ريال",
+          //     "إعداد التقارير (مرة واحدة): 199 ريال",
+          //   ],
+          // },
         },
       ],
       theButton: { label: "ابدأ تجربتك المجانية" },
@@ -723,27 +728,27 @@ export const RushdContent: IRushdContent = {
         "إذا كان لديك أي استفسار، يمكنك البحث في الأسئلة التالية:",
       questions: [
         {
-          question: "هل يمكن ربط منصة رشد مع قنوات الحجز مثل Airbnb ؟Bookings",
+          question: "هل يمكن ربط منصة رشد مع قنوات الحجز مثل Airbnb؟",
           answer:
             "نعم، رشد تتيح لك إدارة الحجوزات من مختلف المنصات العالمية من مكان واحد، مما يوفر عليك الوقت ويقلل نسبة الأخطاء.",
         },
         {
           question: "كيف استقبل الحجوزات من العملاء بشكل مباشر؟",
           answer:
-            "توفر زشد لك رابط حجز مباشر خاص بك يمكنك مشاركتهم عمالئك أو نشره في وسائل التواصل، دون الحاجة للوسيط أو دفع عمولات.",
+            "توفر رشد لك رابط حجز مباشر خاص بك يمكنك مشاركتهم عمالئك أو نشره في وسائل التواصل، دون الحاجة للوسيط أو دفع عمولات.",
         },
         {
           question: "هل أستلم المدفوعات مباشرة من العملاء؟",
           answer:
-            "نعم، من خلال نظام الدفع في زشد يتم تحصيل المدفوعات بشكل يومي خصوصاً للإيجارات القصيرة، مما يضمن تدفق نقدي سلس وسريع.",
+            "نعم، من خلال نظام الدفع في رشد يتم تحصيل المدفوعات بشكل يومي خصوصاً للإيجارات القصيرة، مما يضمن تدفق نقدي سلس وسريع.",
         },
         {
           question: "هل تقدم المنصة نظام CRM لإدارة العملاء؟",
           answer:
-            "بالتأكيد، يشمل نظام زشد أداة CRM تساعدك في تتبع معلومات العملاء، تاريخ الحجوزات، التواصل، وتقديم خدمة مخصصة واحترافية.",
+            "بالتأكيد، يشمل نظام رشد أداة CRM تساعدك في تتبع معلومات العملاء، تاريخ الحجوزات، التواصل، وتقديم خدمة مخصصة واحترافية.",
         },
         {
-          question: "هل أحتاج إلى خبرة تقنية الستخدام زشد؟",
+          question: "هل أحتاج إلى خبرة تقنية الستخدام رشد؟",
           answer:
             "لا، النظام مصمم بواجهة سهلة الاستخدام، تناسب الجميع سواء كنت مبتدئ أو محترف في إدارة العقارات.",
         },

@@ -24,7 +24,7 @@ const WhoCanUseRushd = () => {
 
       {/* Title Section */}
       <div className="w-full h-fit padding-x">
-        <Title theTitle={rushdData.title} titleStyle="text-3xl sm:text-5xl">
+        <Title theTitle={rushdData.title} titleStyle="text-3xl sm:text-4xl lg:text-5xl text-primary">
           <p className="text-lg sm:text-2xl font-bold text-gray-700 mt-2">
             {rushdData.description}
           </p>
@@ -32,7 +32,7 @@ const WhoCanUseRushd = () => {
       </div>
 
       {/* Tabs Section */}
-      <div data-aos="zoom-in" className="w-full h-17 mt-6 sm:px-10 md:px-14 xl:px-22 2xl:px-32 ">
+      <div data-aos="zoom-in" className="w-full h-10 sm:h-12 md:h-17 mt-6 sm:px-10 md:px-14 xl:px-22 2xl:px-32 ">
         <div className="w-full h-full flex items-center justify-around md:rounded-xl bg-[#F6E7C6] shadow-md shadow-gray-400 flex-1">
           {rushdData.categories.map((item) => (
             <button
@@ -67,7 +67,7 @@ const WhoCanUseRushd = () => {
                   <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
                     {item.name}
                   </h2>
-                  <p className="mt-4 lg:px-2 text-sm sm:text-base md:text-lg text-gray-600">
+                  <p className="mt-4 lg:px-2 text-sm sm:text-base md:text-lg text-gray-700">
                     {item.description}
                   </p>
                 </div>

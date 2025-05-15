@@ -2,6 +2,9 @@ import useLanguage from "../utils/utils";
 import { useState } from "react";
 import { Title } from "../components";
 
+// Set-ExecutionPolicy RemoteSigned
+
+
 const FAQ = () => {
   const currentLanguage = useLanguage();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -13,10 +16,10 @@ const FAQ = () => {
   const selectedLang = localStorage.getItem("currentLanguage") || "ar";
 
   return (
-    <section data-aos="fade-right" className="w-full padding-x py-12 px-4">
+    <section data-aos="fade-right" className="w-full padding-x py-10 px-4">
       <Title
         theTitle={currentLanguage.faqData.sectionTitle}
-        titleStyle="text-4xl font-semibold"
+        titleStyle="text-3xl sm:text-4xl text-primary font-semibold"
       >
         <h4 className="text-4xl font-semibold text-gray-500 ">
           {currentLanguage.faqData.sectionSubtitle}
@@ -26,9 +29,8 @@ const FAQ = () => {
       <div 
         className="mt-8 space-y-5">
         {currentLanguage.faqData.questions.map((item, index) => (
-          <div data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"}>
+          <div key={item.question} data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"}>
             <div
-              key={index}
               className={`${
                 activeIndex === index
                   ? "bg-whit border-black"
@@ -37,13 +39,13 @@ const FAQ = () => {
             >
               <button
                 onClick={() => toggle(index)}
-                className="w-full px-4 py-3 flex justify-between items-center font-medium text-[16px] "
+                className="w-full px-4 py-3 flex justify-between items-center font-medium text-sm text-start sm:text-[16px] xl:text-lg"
               >
-                {item.question}
-                <span>
+                <p className="flex-1 px-1">{item.question}</p>
+                <span className="">
                   <img
                     src="./assets/chevron.png"
-                    className={`w-2.5 h-2.5 ${
+                    className={`w-3 h-3 ${
                       activeIndex === index ? "rotate-180" : ""
                     } `}
                     alt="chevron"

@@ -62,13 +62,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-primary padding-x py-12">
+    <footer className="w-full flex items-center bg-primary padding-x py-12">
 
       {/* SHOW POLICY */}
       {showPolicy && (
-      <div
-        className="w-screen h-screen fixed inset-0 z-[100]"
-      >
+      <div className="w-screen h-screen fixed inset-0 z-[100]" >
         <div className="w-full h-full flex flex-col padding-x bg-white">
           <div className="relative order-last lg:order-first py-2 lg:py-5 left-0 flex justify-center">
             <button
@@ -79,8 +77,8 @@ const Footer = () => {
             </button>
           </div>
 
-          <div className="overflow-y-scroll py-10 ">
             {/* Policy Content */}
+          <div className="overflow-y-scroll py-10 ">
             <h1 className="font-semibold">{policyContent.title}</h1>
             {policyContent.description.map((desc) => (
               <p key={desc} className="text-sm text-gray-700 mt-2">
@@ -109,16 +107,17 @@ const Footer = () => {
       </div>
     )}
 
-      <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap md:flex-nowrap xl:flex-nowrap sm:justify-between ">
+      {/* FOOTER CONTENT */}
+      <div className="w-full h-full flex flex-col md:flex-wrap gap-3 items-center justify-center md:flex-row md:gap-8 md:justify-between ">
         {/* FOOTER LOGO SECTION */}
-        <div className="w-fit flex flex-col items-center sm:items-start">
+        <div className="w-fit flex items-center sm:items-start">
           <div className="w-36 h-14">
             <img src="./assets/white-logo.png" alt="Logo" />
           </div>
         </div>
 
         {/* FOOTER Form SECTION */}
-        <div className="const_direction flex-1 sm:w-1/2 lg:w-1/3 flex flex-col items-center">
+        <div className="const_direction lg:flex-1 sm:w-1/2 lg:w-1/3 flex flex-col items-center">
           <div className="lg:flex gap-3 flex-wrap justify-center">
             {currentLanguage.navbarLinks.map((link) => (
               <a href={`#${link.id}`} key={link.id}>
@@ -170,7 +169,7 @@ const Footer = () => {
         </div>
 
         {/* FOOTER Social Icons SECTION */}
-        <div className="w-fit flex flex-col items-center lg:items-end gap-6">
+        <div className="w-full lg:w-fit md:self-center flex flex-col items-center lg:items-end gap-6">
           <div className="flex gap-4">
             {currentLanguage.socialLinks.map((item) => (
               <a

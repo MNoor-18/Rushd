@@ -42,7 +42,7 @@ const Quotes = () => {
     };
 
     return (
-        <div data-aos="fade-up" className="w-full h-fit pt-10">
+        <div data-aos="fade-up" className="w-full h-fit py-10">
             {/* Title Section */}
             <div className="mb-8 padding-x">
                 <Title theTitle={currentLanguage.quotesData.sectionTitle} titleStyle="text-3xl sm:text-5xl" />
@@ -70,7 +70,7 @@ const Quotes = () => {
                 </div>
 
                 {/* Slider Buttons */}
-                <div className="flex h-14 w-full justify-end mt-4">
+                <div className="flex items-end h-14 w-full justify-end mt-5">
                     <SliderButtons
                         onPrev={handlePrev}
                         onNext={handleNext}
