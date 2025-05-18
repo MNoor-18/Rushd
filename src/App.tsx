@@ -37,7 +37,7 @@ function App() {
     <HelmetProvider>
       <div className="max-w-[1920px] relative overflow-x-hidden scroll-smooth transition-all *:w-full 2xl:*:mx-auto ">
         <Toaster />
-        <div className="w-full h-24 fixed z-30 md:px-12 xl:px-20 2xl:px-30 ">
+        <div className="w-full h-24 fixed z-30 md:px-12 xl:px-20 2xl:px-31 ">
           <div
             id="navbar_top_space"
             className="hidden md:block w-full h-5 backdrop-blur-[1px] transition-all"

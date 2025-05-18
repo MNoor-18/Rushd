@@ -2,7 +2,7 @@
 
 /*################ PADDING ################*/
 .padding-x {
-    @apply px-5 sm:px-9 md:px-13 xl:px-21 2xl:px-31
+    @apply px-5 sm:px-9 md:px-13 xl:px-21 2xl:px-33
 }
 
 /*################ COLORS ################*/
