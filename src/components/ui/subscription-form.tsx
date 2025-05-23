@@ -79,8 +79,8 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
 
     const dataToSubmit = {
       ...values,
-      plan, // Add the plan to the submitted data
-      timestamp: new Date().toISOString(), // Add a client-side timestamp
+      plan: plan.charAt(0).toUpperCase() + plan.slice(1),
+      timestamp: new Date().toISOString(),
     };
 
     try {
