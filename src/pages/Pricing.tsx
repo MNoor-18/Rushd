@@ -1,4 +1,5 @@
 import { Title, PlanCard, CustomButton } from "../components";
+import { SubscriptionDrawer } from "../components/subscription-drawer";
 import useLanguage from "../utils/utils";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
@@ -42,7 +43,9 @@ const Pricing = () => {
           >
             <div className="w-full h-full rounded-md bg-[#F6E7C6] py-6 px-4 sm:py-10 sm:px-10 flex flex-col gap-4 sm:gap-5 text-sm sm:text-lg font-semibold">
               <div className="border-b-[1px]">
-                <h4 className="text-lg sm:text-2xl">{aboutPlan?.name}</h4>
+                <h4 className="text-lg sm:text-2xl capitalize">
+                  {aboutPlan?.name}
+                </h4>
                 <h5 className="text-sm md:text-lg ">
                   {aboutPlan?.clarification && `( ${aboutPlan.clarification} )`}
                 </h5>
@@ -60,9 +63,8 @@ const Pricing = () => {
                       <p>{aboutPlan.units && aboutPlan.units}</p>
                     </div>
                   )}
-
                   <div>
-                    <h5 className="text-sm md:text-xl">
+                    <h5 className="text-sm md:text-xl capitalize">
                       {currentLanguage.pricingData.featureTitle}
                     </h5>
                     <ul className="px-4 sm:px-8 list-disc">
@@ -70,6 +72,9 @@ const Pricing = () => {
                         <li key={item}>{item}</li>
                       ))}
                     </ul>
+                  </div>
+                  <div className="flex w-full justify-end">
+                    <SubscriptionDrawer plan={aboutPlan?.name || "basic"} />
                   </div>
                 </div>
 

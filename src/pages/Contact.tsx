@@ -4,6 +4,9 @@ import { Title } from "../components";
 import { useState } from "react";
 import { FormData } from "../types";
 import toast from "react-hot-toast";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
+import { Button } from "../components/ui/button";
 
 const Contact = () => {
   const currentLanguage = useLanguage();
@@ -117,9 +120,7 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="w-full lg:min-h-screen h-fit py-10 flex flex-col gap-10 padding-x lg:flex-row lg:items-start "
-    >
+    <div className="w-full h-fit py-10 flex flex-col gap-10 padding-x lg:flex-row lg:items-start ">
       <Helmet>
         <title>Rushd</title>
         <meta name="description" content="Rushd" />
@@ -150,21 +151,24 @@ const Contact = () => {
       </div>
 
       {/* Form Section */}
-      <div data-aos="fade-up" className="w-full lg:w-1/2 md:pt-12 flex justify-center lg:justify-end">
+      <div
+        data-aos="fade-up"
+        className="w-full lg:w-1/2 md:pt-12 flex justify-center lg:justify-end"
+      >
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-lg min-h-fit md:h-140 border-gray-400 border-[1px] rounded-lg py-6 px-5 sm:py-8 sm:px-7 flex flex-col gap-5"
+          className="w-full max-w-lg min-h-fit md:h-auto border-gray-400 border-[1px] rounded-lg py-6 px-5 sm:py-8 sm:px-7 flex flex-col gap-5"
         >
           {/* Name Field */}
           <div className="w-full">
             <label className="text-sm sm:text-base">
               {currentLanguage.formData.theName}
             </label>
-            <input
+            <Input
               type="text"
               name="name"
               value={formData.name}
-              className={`w-full h-10 border-[1px] rounded-lg mt-1 px-2 ${
+              className={`${
                 errors.name ? "border-red-500" : "border-gray-400"
               }`}
               placeholder={currentLanguage.formData.placeholders.theName}
@@ -180,11 +184,11 @@ const Contact = () => {
             <label className="text-sm sm:text-base">
               {currentLanguage.formData.surName}
             </label>
-            <input
+            <Input
               type="text"
               name="surname"
               value={formData.surname}
-              className={`w-full h-10 border-[1px] rounded-lg mt-1 px-2 ${
+              className={`${
                 errors.surname ? "border-red-500" : "border-gray-400"
               }`}
               placeholder={currentLanguage.formData.placeholders.surName}
@@ -200,11 +204,11 @@ const Contact = () => {
             <label className="text-sm sm:text-base">
               {currentLanguage.formData.email}
             </label>
-            <input
+            <Input
               type="email"
               name="email"
               value={formData.email}
-              className={`w-full h-10 border-[1px] rounded-lg mt-1 px-2 ${
+              className={`${
                 errors.email ? "border-red-500" : "border-gray-400"
               }`}
               placeholder={currentLanguage.formData.placeholders.email}
@@ -220,14 +224,15 @@ const Contact = () => {
             <label className="text-sm sm:text-base">
               {currentLanguage.formData.message}
             </label>
-            <textarea
+            <Textarea
               name="message"
               value={formData.message}
-              className={`w-full h-20 min-h-10 max-h-32 border-[1px] rounded-lg mt-1 p-2 ${
+              className={`${
                 errors.message ? "border-red-500" : "border-gray-400"
               }`}
               placeholder={currentLanguage.formData.placeholders.message}
               onChange={handleChange}
+              rows={4}
             />
             {errors.message && (
               <p className="text-red-500 text-xs mt-1">{errors.message}</p>
@@ -235,16 +240,13 @@ const Contact = () => {
           </div>
 
           {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-full h-10 rounded-lg mt-1 flex justify-center items-center bg-primary text-white hover:bg-primary-dark transition"
-          >
+          <Button type="submit">
             {isLoading ? (
               <div className="animate-spin rounded-full h-5 w-5 border-[1px] md:border-2 border-white border-t-transparent" />
             ) : (
               currentLanguage.formData.submit
             )}
-          </button>
+          </Button>
         </form>
       </div>
     </div>

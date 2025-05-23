@@ -6,11 +6,13 @@ const PlanCard = ({ name, price, isActive, onSelect }: PlanCardProps) => {
       <button
         onClick={onSelect}
         className={`w-full sm:w-md xl:w-125 px-4 py-3 flex items-center justify-between lg:px-6 lg:py-5 rounded-md lg:rounded-xl shadow-gray-300 shadow-md transition-all 
-          duration-300 ${isActive ? "bg-black text-white" : "bg-[#FBF4E2] text-black"}
+          duration-300 ${
+            isActive ? "bg-black text-white" : "bg-[#FBF4E2] text-black"
+          }
         `}
       >
         <div className="w-full flex items-center justify-between *:w-fit">
-          <h3 className="text-start text-sm md:text-base lg:text-xl xl:2xl font-bold">
+          <h3 className="text-start text-sm md:text-base lg:text-xl xl:2xl font-bold capitalize">
             {name}
           </h3>
 
