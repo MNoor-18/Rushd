@@ -41,7 +41,7 @@ const Pricing = () => {
             data-aos="zoom-out"
             className="w-full sm:w-125 lg:w-full xl:w-[500px] h-full"
           >
-            <div className="w-full h-full rounded-md bg-[#F6E7C6] py-6 px-4 sm:py-10 sm:px-10 flex flex-col gap-4 sm:gap-5 text-sm sm:text-lg font-semibold">
+            <div className="w-full h-full shadow-xl rounded-md bg-[#F6E7C6] py-6 px-4 sm:py-10 sm:px-10 flex flex-col gap-4 sm:gap-5 text-sm sm:text-lg font-semibold">
               <div className="border-b-[1px]">
                 <h4 className="text-lg sm:text-2xl capitalize">
                   {aboutPlan?.name}
