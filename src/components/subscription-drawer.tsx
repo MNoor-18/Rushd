@@ -3,7 +3,6 @@ import * as React from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { Dialog, DialogContent, DialogTrigger } from "../components/ui/dialog";
 import { Drawer, DrawerContent, DrawerTrigger } from "../components/ui/drawer";
-import useLanguage from "../utils/utils";
 import SubscriptionForm from "./ui/subscription-form";
 import { Button } from "./ui/button";
 
@@ -14,7 +13,6 @@ interface SubscriptionFormProps {
 export function SubscriptionDrawer({ plan }: SubscriptionFormProps) {
   const [open, setOpen] = React.useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  const currentLanguage = useLanguage();
 
   if (isDesktop) {
     return (
