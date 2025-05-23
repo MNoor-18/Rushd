@@ -16,6 +16,8 @@ import { CardTitle, CardDescription, CardFooter } from "./card"; // Assuming sha
 import { Loader2 } from "lucide-react"; // For loading spinner
 import toast from "react-hot-toast";
 
+import useLanguage from "../../utils/utils";
+
 // Define the Zod schema for form validation
 // Basic phone regex, can be adjusted for more specific needs
 const phoneRegex = new RegExp(
@@ -60,6 +62,9 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
     type: "success" | "error";
     message: string;
   } | null>(null);
+
+  const currentLanguage = useLanguage();
+  const thisFormData = currentLanguage.pricingData.form
 
   const selectedLang = localStorage.getItem("currentLanguage") || "ar";
 
@@ -114,7 +119,7 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
         message: "Thank you! Your information has been submitted successfully.",
       });
       form.reset(); // Reset form fields on successful submission
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Submission error:", error);
       setSubmitStatus({
         type: "error",
@@ -132,12 +137,11 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
   }
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-2xl mx-auto pt-3">
       <div className="flex flex-col gap-2 mb-4">
-        <CardTitle>Interested in this Plan?</CardTitle>
+        <CardTitle>{thisFormData.confirmation}</CardTitle>
         <CardDescription>
-          Fill out the form below and we&apos;ll get in touch with you regarding
-          the&nbsp;
+          {thisFormData.explain}
           <span className="capitalize font-semibold">"{plan}"</span>.
         </CardDescription>
       </div>
@@ -149,9 +153,9 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Full Name</FormLabel>
+                  <FormLabel>{thisFormData.fullNameL}</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input placeholder={thisFormData.fullNameP} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -162,12 +166,13 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email Address</FormLabel>
+                  <FormLabel>{thisFormData.emailL}</FormLabel>
                   <FormControl>
                     <Input
                       type="email"
-                      placeholder="you@example.com"
+                      placeholder={thisFormData.emailP}
                       {...field}
+                      className="const_direction"
                     />
                   </FormControl>
                   <FormMessage />
@@ -179,9 +184,9 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
               name="mobile"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mobile Number</FormLabel>
+                  <FormLabel>{thisFormData.phoneL}</FormLabel>
                   <FormControl>
-                    <Input type="tel" placeholder="+1234567890" {...field} />
+                    <Input type="tel" placeholder={thisFormData.phoneP} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -192,9 +197,9 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
               name="city"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>City</FormLabel>
+                  <FormLabel>{thisFormData.cityL}</FormLabel>
                   <FormControl>
-                    <Input placeholder="Your City" {...field} />
+                    <Input placeholder={thisFormData.cityP} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -202,12 +207,19 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
             />
             <Button type="submit" className="w-full" disabled={isLoading}>
               {isLoading ? (
-                <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Submitting...
-                </>
+                selectedLang === "ar"
+                  ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      يتم الإرسال
+                    </>
+                  ) : (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Submitting...
+                    </>)
               ) : (
-                "Submit Information"
+                thisFormData.submit
               )}
             </Button>
           </form>

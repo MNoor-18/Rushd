@@ -123,9 +123,22 @@ export const RushdContent: IRushdContent = {
 
     pricingData: {
       title: "Subscription Plans",
-      description:
-        "We offer three flexible plans tailored to your business size and operational needs, with optional add-ons for scalability:",
+      description:"We offer three flexible plans tailored to your business size and operational needs, with optional add-ons for scalability:",
       featureTitle: "Features:",
+      subscribe: "Subscribe",
+      form: {
+        confirmation: "Interested in this Plan?",
+        explain: "Fill out the form below and we'll get in touch with you regarding the ",
+        fullNameL: "Full Name",
+        fullNameP: "Enter your full name",
+        emailL: "Email Address",
+        emailP: "you@example.com",
+        phoneL: "Phone Number",
+        phoneP: "+966501234567",
+        cityL: "City",
+        cityP: "Enter your city",
+        submit: "Submit Information"
+      },
       plans: [
         {
           name: "basic plan",
@@ -549,9 +562,22 @@ export const RushdContent: IRushdContent = {
     },
     pricingData: {
       title: "خطط الاشتراك",
-      description:
-        "نقدّم لك ثلاث باقات مصممة لتناسب احتياجك مهما كان حجم عملك، مع مزايا مرنة وإضافات اختيارية:",
+      description: "نقدّم لك ثلاث باقات مصممة لتناسب احتياجك مهما كان حجم عملك، مع مزايا مرنة وإضافات اختيارية:",
       featureTitle: "المزايا:",
+      subscribe: "اشترك",
+      form: {
+        confirmation: "مهتم بهذه الخطة؟",
+        explain: "املأ النموذج أدناه وسنتواصل معك بخصوص ",
+        fullNameL: "الاسم الكامل",
+        fullNameP: "أدخل اسمك الكامل",
+        emailL: "البريد الإلكتروني",
+        emailP: "you@example.com",
+        phoneL: "رقم الجوال",
+        phoneP: "+966501234567",
+        cityL: "المدينة",
+        cityP: "أدخل مدينتك",
+        submit: "إرسال المعلومات"
+      },
       plans: [
         {
           name: "الباقة الأساسية",

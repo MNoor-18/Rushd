@@ -1,3 +1,5 @@
+// ########################### components interfaces ###############################
+
 export interface CustomButtonProps {
   label: string;
   theStyle: string;
@@ -55,27 +57,22 @@ export interface FormData {
   message: string;
 }
 
+// ########################### policy data interface ###############################
+
+interface PolicyData {
+  title: string;
+    description: string[];
+    paragraphs: {
+      title: string;
+      description?: string;
+      content: string[];
+    }[];
+    close: string;
+}
+
 export interface IrushdPolicy {
-  ar: {
-    title: string;
-    description: string[];
-    paragraphs: {
-      title: string;
-      description?: string;
-      content: string[];
-    }[];
-    close: string;
-  };
-  en: {
-    title: string;
-    description: string[];
-    paragraphs: {
-      title: string;
-      description?: string;
-      content: string[];
-    }[];
-    close: string;
-  };
+  ar: PolicyData;
+  en: PolicyData;
 }
 
 // ########################### rushd data interface ###############################
@@ -122,6 +119,22 @@ interface RushdContentLanguage {
     title: string;
     description: string;
     featureTitle: string;
+    subscribe: string;
+    form: {
+      // L => label
+      // P => placeholder
+      confirmation: string;
+      explain: string;
+      fullNameL: string;
+      fullNameP: string;
+      emailL: string;
+      emailP: string;
+      phoneL: string;
+      phoneP: string;
+      cityL: string;
+      cityP: string;
+      submit: string
+    }
     plans: {
       name: string;
       clarification: string;
