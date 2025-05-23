@@ -24,7 +24,10 @@ const WhoCanUseRushd = () => {
 
       {/* Title Section */}
       <div className="w-full h-fit padding-x">
-        <Title theTitle={rushdData.title} titleStyle="text-3xl sm:text-4xl lg:text-5xl text-primary">
+        <Title
+          theTitle={rushdData.title}
+          titleStyle="text-3xl sm:text-4xl lg:text-5xl text-primary"
+        >
           <p className="text-lg sm:text-2xl font-bold text-gray-700 mt-2">
             {rushdData.description}
           </p>
@@ -32,7 +35,10 @@ const WhoCanUseRushd = () => {
       </div>
 
       {/* Tabs Section */}
-      <div data-aos="zoom-in" className="w-full h-10 sm:h-12 md:h-17 mt-6 sm:px-10 md:px-14 xl:px-22 2xl:px-32 ">
+      <div
+        data-aos="zoom-in"
+        className="w-full h-10 sm:h-12 md:h-17 mt-6 sm:px-10 md:px-14 xl:px-22 2xl:px-32 "
+      >
         <div className="w-full h-full flex items-center justify-around md:rounded-xl bg-[#F6E7C6] shadow-md shadow-gray-400 flex-1">
           {rushdData.categories.map((item) => (
             <button
@@ -61,9 +67,10 @@ const WhoCanUseRushd = () => {
                 className="w-full flex flex-col xl:flex-row gap-10 lg:gap-5 items-center pt-2 md:pt-8 xl:items-start bg-white padding-x md:justify-between xxl:justify-center xxl:gap-20 "
               >
                 {/* Text Section */}
-                <div 
-                data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"} 
-                className="h-full w-full xl:w-1/2 xl:w-lg ">
+                <div
+                  data-aos={selectedLang === "ar" ? "fade-right" : "fade-left"}
+                  className="h-full w-full  xl:w-lg "
+                >
                   <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
                     {item.name}
                   </h2>
@@ -73,9 +80,10 @@ const WhoCanUseRushd = () => {
                 </div>
 
                 {/* Image Section */}
-                <div 
-                data-aos={selectedLang === "ar" ? "fade-left" : "fade-right"} 
-                className="w-full h-fit order-first pt-5 sm:w-lg">
+                <div
+                  data-aos={selectedLang === "ar" ? "fade-left" : "fade-right"}
+                  className="w-full h-fit order-first pt-5 sm:w-lg"
+                >
                   <img
                     src={item.image}
                     className="w-full h-auto object-cover rounded-lg"

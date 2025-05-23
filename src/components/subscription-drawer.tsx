@@ -26,7 +26,7 @@ export function SubscriptionDrawer({ plan }: SubscriptionFormProps) {
           <Button>{subscribe}</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-lg">
-          <SubscriptionForm plan={plan} />
+          <SubscriptionForm plan={plan} setOpen={setOpen} />
         </DialogContent>
       </Dialog>
     );
@@ -38,7 +38,7 @@ export function SubscriptionDrawer({ plan }: SubscriptionFormProps) {
         <Button>{subscribe}</Button>
       </DrawerTrigger>
       <DrawerContent className="px-4 py-6">
-        <SubscriptionForm plan={plan} />
+        <SubscriptionForm plan={plan} setOpen={setOpen} />
       </DrawerContent>
     </Drawer>
   );

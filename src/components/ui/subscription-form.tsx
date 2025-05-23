@@ -17,6 +17,14 @@ import { Loader2 } from "lucide-react"; // For loading spinner
 import toast from "react-hot-toast";
 
 import useLanguage from "../../utils/utils";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./select";
 
 // Define the Zod schema for form validation
 // Basic phone regex, can be adjusted for more specific needs
@@ -37,26 +45,28 @@ const SubscriptionFormSchema = z.object({
     .string()
     .min(10, { message: "Mobile number should be at least 10 digits." })
     .max(15, { message: "Mobile number can be at most 15 digits." })
-    .regex(phoneRegex, { message: "Please enter a valid mobile number." })
-    .optional()
-    .or(z.literal("")), // Allows empty string or to be undefined
+    .regex(phoneRegex, { message: "Please enter a valid mobile number." }),
   city: z
     .string()
     .min(2, { message: "City must be at least 2 characters." })
-    .max(50)
-    .optional()
-    .or(z.literal("")), // Allows empty string or to be undefined
+    .max(50),
+  propertyType: z
+    .string()
+    .min(2, { message: "Property type must be at least 2 characters." })
+    .max(50, { message: "Property type can be at most 50 characters." }),
 });
 
 type SubscriptionFormValues = z.infer<typeof SubscriptionFormSchema>;
 
 interface SubscriptionFormProps {
+  setOpen: (isOpen: boolean) => void; // Function to set the modal open state
   plan: string; // The plan the user is interested in
-  formTitle?: string;
-  formDescription?: string;
 }
 
-const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
+const SubscriptionForm: React.FC<SubscriptionFormProps> = ({
+  plan,
+  setOpen,
+}) => {
   const [isLoading, setIsLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
     type: "success" | "error";
@@ -64,7 +74,8 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
   } | null>(null);
 
   const currentLanguage = useLanguage();
-  const thisFormData = currentLanguage.pricingData.form
+  const thisFormData = currentLanguage.pricingData.form;
+  const rushdData = currentLanguage.featuresData.whoCanUseRushd;
 
   const selectedLang = localStorage.getItem("currentLanguage") || "ar";
 
@@ -75,6 +86,7 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
       email: "",
       mobile: "",
       city: "",
+      propertyType: "",
     },
   });
 
@@ -90,7 +102,7 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxPOhHVM4FVMwd__tiXBhZ4F-_CKcZyHP83gNmg0W3WYUHznb8HDCTE0o1XnFvGaw4QZQ/exec",
+        "https://script.google.com/macros/s/AKfycbwNpdmqjixDjiwTq406Nob4sBPAG0puBRyqBih_2nBVh_x7ABqwk1dGnGhB8arUGu1WgA/exec",
         {
           method: "POST",
           mode: "cors",
@@ -103,9 +115,13 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
       );
 
       if (response.ok) {
-        return toast.success(
-          "Your information has been submitted successfully."
+        toast.success(
+          selectedLang === "ar"
+            ? "تم إرسال معلوماتك بنجاح."
+            : "Your information has been submitted successfully."
         );
+        form.reset();
+        return setOpen(false);
       } else {
         toast.error(
           selectedLang === "ar"
@@ -113,24 +129,13 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
             : " An error occurred while sending. Please try again."
         );
       }
-
-      setSubmitStatus({
-        type: "success",
-        message: "Thank you! Your information has been submitted successfully.",
-      });
-      form.reset(); // Reset form fields on successful submission
     } catch (error: unknown) {
       console.error("Submission error:", error);
-      setSubmitStatus({
-        type: "error",
-        message:
-          error.message ||
-          "Failed to submit the form. Please check your connection and try again.",
-      });
-      setSubmitStatus({
-        type: "error",
-        message: "An unexpected error occurred while submitting the form.",
-      });
+      toast.error(
+        selectedLang === "ar"
+          ? " حدث خطأ أثناء الإرسال. حاول مرة أخرى."
+          : " An error occurred while sending. Please try again."
+      );
     } finally {
       setIsLoading(false);
     }
@@ -186,7 +191,49 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
                 <FormItem>
                   <FormLabel>{thisFormData.phoneL}</FormLabel>
                   <FormControl>
-                    <Input type="tel" placeholder={thisFormData.phoneP} {...field} />
+                    <Input
+                      type="tel"
+                      placeholder={thisFormData.phoneP}
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="propertyType"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{thisFormData.propertyTypeL}</FormLabel>
+                  <FormControl>
+                    <Select
+                      {...field}
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <SelectTrigger className="w-full">
+                        <SelectValue
+                          placeholder={
+                            thisFormData.propertyTypeL || "Select a fruit"
+                          }
+                        />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectGroup>
+                          {rushdData.categories.map((item) => (
+                            <SelectItem
+                              key={item.name}
+                              value={item.name}
+                              className="capitalize"
+                            >
+                              {item.name}
+                            </SelectItem>
+                          ))}
+                        </SelectGroup>
+                      </SelectContent>
+                    </Select>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -207,17 +254,17 @@ const SubscriptionForm: React.FC<SubscriptionFormProps> = ({ plan }) => {
             />
             <Button type="submit" className="w-full" disabled={isLoading}>
               {isLoading ? (
-                selectedLang === "ar"
-                  ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      يتم الإرسال
-                    </>
-                  ) : (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Submitting...
-                    </>)
+                selectedLang === "ar" ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    يتم الإرسال
+                  </>
+                ) : (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Submitting...
+                  </>
+                )
               ) : (
                 thisFormData.submit
               )}

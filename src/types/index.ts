@@ -61,13 +61,13 @@ export interface FormData {
 
 interface PolicyData {
   title: string;
-    description: string[];
-    paragraphs: {
-      title: string;
-      description?: string;
-      content: string[];
-    }[];
-    close: string;
+  description: string[];
+  paragraphs: {
+    title: string;
+    description?: string;
+    content: string[];
+  }[];
+  close: string;
 }
 
 export interface IrushdPolicy {
@@ -131,10 +131,12 @@ interface RushdContentLanguage {
       emailP: string;
       phoneL: string;
       phoneP: string;
+      propertyTypeL: string;
+      propertyTypeP: string;
       cityL: string;
       cityP: string;
-      submit: string
-    }
+      submit: string;
+    };
     plans: {
       name: string;
       clarification: string;
